@@ -1,0 +1,28 @@
+.container{
+  
+}
+
+.row {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  flex-wrap: nowrap!important;
+  margin-left: 200px!important;
+  margin-right: 300px!important;
+}
+
+.infos{
+  border: 1px solid; 
+  border-radius: 25px;
+  height: 650px;
+  padding: 10px;
+}
+
+.content{
+  border: 1px solid;
+  border-radius: 25px; 
+  margin-left: 15px;
+  height: 550px;
+  padding: 10px;
+}
