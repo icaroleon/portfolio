@@ -1,4 +1,4 @@
-.tab button.active {
+.content .active {
     background-color: #ccc;
   }
 
@@ -17,7 +17,7 @@
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  .tablinks {
     background-color: inherit;
     float: left;
     border: none;
@@ -40,11 +40,15 @@
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
     border-top: none;
+    padding: 14px;
   }
 
   .tab{
     align-items: flex-start;
     margin-right: 50px;
+  }
+
+  .aboutMe {
+    padding-left: 0px !important;
   }

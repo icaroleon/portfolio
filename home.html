@@ -10,8 +10,8 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row layout-center">
-        <div class="col" id="infos-content">
+      <div class="row layout">
+        <div class="col" id="info-content">
           <img src="https://avatars.githubusercontent.com/u/100085859?v=4" id="profile-pic">
           <h2 id="name"> Ícaro Leon</h2>
           <h3 id="ocupation">Full-Stack Web Developer | Ruby on Rails</h3>
@@ -23,7 +23,7 @@
         </div>
         <div class="col-9" id="tabs-content">
           <div class="row content"> 
-            <div class = "col tablinks" id="defaultOpen" onclick="openTab(event, 'aboutMeContent')">
+            <div class = "col tablinks aboutMeTab" id="defaultOpen" onclick="openTab(event, 'aboutMeContent')">
               <h5 class="mb-0">01.</h5>
               <h1 class="mb-0"><strong>Sobre</strong></h1>
             </div>
@@ -36,7 +36,7 @@
               <h1 class="mb-0"><strong>Projetos</strong></h1>
             </div>
           </div>
-          <section class="mt-4 tabBody">
+          <section class="tabBody">
             <div class="tabcontent" id="aboutMeContent">
               <p> Formado em Direito e nascido em Minas Gerais, atuei como advogado criminalista desde a minha formação, em 2019. </p>
               <p> Após diversos projetos voluntários realizados e ter feito parte de escritórios tanto em Minas Gerais quanto no Rio de Janeiro, <strong> em 2022 </strong> dei voz à minha antiga paixão pela tecnologia e<strong> resolvi transacionar de carreira, concluindo  o bootcamp de desenvolvimento web da <em> Le Wagon</strong></em>, momento no qual tive contato com diversas linguagens, conceitos, funcionalidades, e desafios dessa nova área. </p>
@@ -50,11 +50,21 @@
               <p id="third-parag"> Office | Trello | Figma | Scrum | Kanban </p>
             </div>
             <div class="tabcontent" id="projectsContent">
-              teste2
+              <p>LetsGo
+
+              <p>Utilizando o framework Ruby on Rails, além de autenticações para usuários, APIs tais quais Mapbox (para o serviço de geolocalização), Cloudinary (para o upload de fotos), Websocket (para mensagens privadas entre usuários), além de nested comments (para viabilizar respostas aos posts principais de tal evento, respostas à tais respostas, e assim por diante), o “Lets Go” é um aplicativo web que se assemelha à uma rede social, possibilitando ao usuário anunciar eventos (públicos ou privados), confirmar presença, conversar com seus amigos, e comentar nos posts dos eventos divulgados. (Veja o código) </p>
+                
+                Rent for All
+                
+              <p>Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o marketplace “Rent for All”, serviço que possibilita a busca e anúncio de itens que se deseja alugar. (Veja o código) </p>
+                
+                Watchlist
+                
+              <p>Primeiro projeto produzido no bootcamp da Le Wagon. Permite o usuário adicionar filmes da API “The Movie Database” à listas de seu interesse e elaborar reviews sobre tais produções. (Veja o código)</p>
             </div>
           </section>      
 
-
+!-->
 
             <!--
               <button class="tablinks" onclick="openTab(event, 'aboutMe2')" id="defaultOpen">Sobre</button>

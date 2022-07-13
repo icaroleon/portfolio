@@ -1,16 +1,23 @@
 .container-fluid{
-  
+  margin-left: 100px!important;
+  margin-right: 50px!important;
   
 }
 
-.layout-center {
+.layout {
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 50%;
-  bottom: 50%;
-  flex-wrap: nowrap!important;
-  margin-left: 200px!important;
-  margin-right: 300px!important;
+  bottom: 50%; 
+  flex-wrap: nowrap!important; 
+  
+} 
+
+.tabs-content {
+  position: absolute!important;
+  left: 100%;
+
+  
 } 
 
 .infos{
@@ -21,7 +28,13 @@
 }
 .tabBody{
   text-align: justify;
-  width: 750px;
+  width: 870px;
   height: 350px;
   background-color: red;
+  margin: 0px !important;
+}
+
+.content {
+  margin: 0px !important;
+  width: 870px;
 }
