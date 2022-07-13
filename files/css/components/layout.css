@@ -1,22 +1,19 @@
 .container-fluid{
-  margin-left: 100px!important;
-  margin-right: 50px!important;
-  
+
 }
 
 .layout {
-  align-items: center;
+  /* align-items: center;
   position: fixed;
   top: 50%;
-  bottom: 50%; 
+  bottom: 50%; */
   flex-wrap: nowrap!important; 
   
 } 
 
-.tabs-content {
-  position: absolute!important;
-  left: 100%;
-
+#info-content {
+  top: 100px;
+  padding-left: 5%;
   
 } 
 
@@ -26,15 +23,17 @@
   height: 650px;
   padding: 10px;
 }
+
+#tabs-content{
+  padding-right: 0px;
+}
 .tabBody{
   text-align: justify;
-  width: 870px;
   height: 350px;
-  background-color: red;
   margin: 0px !important;
+  padding-right: 5%;
 }
 
 .content {
   margin: 0px !important;
-  width: 870px;
 }
