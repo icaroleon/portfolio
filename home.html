@@ -3,103 +3,119 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='css/style.css' rel='stylesheet'>
+    <link href='files/css/style.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <meta charset="utf-8">
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="infos col">
+      <div class="row layout-center">
+        <div class="col" id="infos-content">
           <img src="https://avatars.githubusercontent.com/u/100085859?v=4" id="profile-pic">
-          <div class="infos-content">
-            <h2 id="name"> Ícaro Leon</h2>
-            <h3 id="ocupation">Full-Stack Web Developer | Ruby on Rails</h3>
-            <p><i class="fa-solid fa-location-crosshairs"></i> Nova Lima/MG, Brasil</p>
-            <p><i class="fa-solid fa-square-phone"></i> (+55 031) 99334-8720</p>
-            <p><i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/in/icaroleon/</p>
-            <p><i class="fa-solid fa-square-envelope"></i> icvieiramg@gmail.com</p>
-            <p><i class="fa-brands fa-github-square"></i> https://github.com/icaroleon</p>
-          </div>
+          <h2 id="name"> Ícaro Leon</h2>
+          <h3 id="ocupation">Full-Stack Web Developer | Ruby on Rails</h3>
+          <p><i class="fa-solid fa-location-crosshairs"></i> Nova Lima/MG, Brasil</p>
+          <p><i class="fa-solid fa-square-phone"></i> (+55 031) 99334-8720</p>
+          <p><i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/in/icaroleon/</p>
+          <p><i class="fa-solid fa-square-envelope"></i> icvieiramg@gmail.com</p>
+          <p><i class="fa-brands fa-github-square"></i> https://github.com/icaroleon</p>
         </div>
-        <div class="content col-10">
-          <section class="sobre d-flex flex-column">
-            <p id="readMe"> icaroleon/README.md</p>
-            <h1 class="content-head"> Sobre </h1>
-            <div class="content-body flex-grow-1">
-                <p align="justify"> Formado em Direito e nascido em Minas Gerais, atuei como advogado criminalista desde a minha formação, em 2019. </p>
+        <div class="col-9" id="tabs-content">
+          <div class="row content"> 
+            <div class = "col tablinks" id="defaultOpen" onclick="openTab(event, 'aboutMeContent')">
+              <h5 class="mb-0">01.</h5>
+              <h1 class="mb-0"><strong>Sobre</strong></h1>
+            </div>
+            <div class = "col tablinks" id ="skillsTab" onclick="openTab(event, 'skillsContent')" id="skillsTab">
+              <h5 class="mb-0">02.</h5>
+              <h1 class="mb-0"><strong>Skills</strong></h1>
+            </div>
+            <div class = "col tablinks" id = "projectsTab" onclick="openTab(event, 'projectsContent')">
+              <h5 class="mb-0">03.</h5>
+              <h1 class="mb-0"><strong>Projetos</strong></h1>
+            </div>
+          </div>
+          <section class="mt-4 tabBody">
+            <div class="tabcontent" id="aboutMeContent">
+              <p> Formado em Direito e nascido em Minas Gerais, atuei como advogado criminalista desde a minha formação, em 2019. </p>
+              <p> Após diversos projetos voluntários realizados e ter feito parte de escritórios tanto em Minas Gerais quanto no Rio de Janeiro, <strong> em 2022 </strong> dei voz à minha antiga paixão pela tecnologia e<strong> resolvi transacionar de carreira, concluindo  o bootcamp de desenvolvimento web da <em> Le Wagon</strong></em>, momento no qual tive contato com diversas linguagens, conceitos, funcionalidades, e desafios dessa nova área. </p>
+              <p> Nesse momento, procuro uma oportunidade profissional tanto para colocar em prática tais ensinamentos, quanto para ter contato com o ambiente de criação de produtos digitais. </p>
+              <p> Gostou da minha história? <a href="#heading-contato"> Entre em contato! </a></p>
+              <a href="files/Ícaro_Leon_CV.pdf" target?="_blank" download="Ícaro_Leon_CV"> Download my CV </a>
+            </div>
+            <div class="tabcontent" id="skillsContent">
+              <p id="first-parag">Ruby | Javascript | Ruby on Rails | React | HTML | CSS | Bootstrap | MySQL | PostgreSQL
+              <p id="second-parag"> OOP | RESTful APIs | Git | Github | Heroku </p>
+              <p id="third-parag"> Office | Trello | Figma | Scrum | Kanban </p>
+            </div>
+            <div class="tabcontent" id="projectsContent">
+              teste2
+            </div>
+          </section>      
+
+
+
+            <!--
+              <button class="tablinks" onclick="openTab(event, 'aboutMe2')" id="defaultOpen">Sobre</button>
+              <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+              <button class="tablinks" onclick="openTab(event, 'projects')">Projetos</button>
+            !-->
+            
+        </div>
+
+        <!--
+            <div id="aboutMe2" class="tabcontent">
+              <h1>Sobre</h1>
+              <p align="justify"> Formado em Direito e nascido em Minas Gerais, atuei como advogado criminalista desde a minha formação, em 2019. </p>
                 <p align="justify"> Após diversos projetos voluntários realizados e ter feito parte de escritórios tanto em Minas Gerais quanto no Rio de Janeiro, <strong> em 2022 </strong> dei voz à minha antiga paixão pela tecnologia e<strong> resolvi transacionar de carreira, concluindo  o bootcamp de desenvolvimento web da <em> Le Wagon</strong></em>, momento no qual tive contato com diversas linguagens, conceitos, funcionalidades, e desafios dessa nova área. </p>
                 <p align="justify"> Nesse momento, procuro uma oportunidade profissional tanto para colocar em prática tais ensinamentos, quanto para ter contato com o ambiente de criação de produtos digitais. </p>
                 <p align="justify"> Gostou da minha história? <a href="#heading-contato"> Entre em contato! </a></p>
               <a href="files/Ícaro_Leon_CV.pdf" target?="_blank" download="Ícaro_Leon_CV"> Download my CV </a>
+            </div>
+            
+            <div id="skills" class="tabcontent">
+              <h1>Skills</h1>
+              
+            </div>
+            <div id="projects" class="tabcontent">
+              <h3>Projetos</h3>
+              <p>LetsGo
+
+                Utilizando o framework Ruby on Rails, além de autenticações para usuários, APIs tais quais Mapbox (para o serviço de geolocalização), Cloudinary (para o upload de fotos), Websocket (para mensagens privadas entre usuários), além de nested comments (para viabilizar respostas aos posts principais de tal evento, respostas à tais respostas, e assim por diante), o “Lets Go” é um aplicativo web que se assemelha à uma rede social, possibilitando ao usuário anunciar eventos (públicos ou privados), confirmar presença, conversar com seus amigos, e comentar nos posts dos eventos divulgados. (Veja o código)
+                
+                Rent for All
+                
+                Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o marketplace “Rent for All”, serviço que possibilita a busca e anúncio de itens que se deseja alugar. (Veja o código)
+                
+                Watchlist
+                
+                Primeiro projeto produzido no bootcamp da Le Wagon. Permite o usuário adicionar filmes da API “The Movie Database” à listas de seu interesse e elaborar reviews sobre tais produções. (Veja o código)</p>
+            </div>
+            
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            
+            <div class="content-body flex-grow-1">
+                !-->
               <!-- <img src="https://i.ibb.co/NLpDRCr/6358887-preview-rev-1-1.png" id="icaroleon-law-to-code" alt="icaroleon-law-to-code" height="350px" width="375px"> -->             
             </div>
-          </section>
+
+
+
+
+          
+
+          
         </div>
       </div>
     </div>
 
-    <!--
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#heading-sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#heading-skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#heading-projetos">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#heading-contato">Contato</a>
-            </li>
-          </ul>
-          <a href="#heading-sobre"> Sobre </a>|
-        <a href="#heading-skills"> Skills </a>|
-        <a href="#heading-projetos"> Projetos </a>|
-        <a href="#heading-contato"> Contato </a>|
-        </div>
-      </div>
-    </div>
     
-    <p align="right">
-        
-      </p>
-      
-    <div class="container">
-      
-      <section class="skills">
-        <h1 align="center" id="heading-skills"> Skills </h1> 
-        <div class="skills"> class="content-head"
-          <h3 align="center"> Ruby | Javascript | Ruby on Rails | React | HTML | CSS | Bootstrap | MySQL | PostgreSQL  </h3>
-          <h4 align="center"> OOP | RESTful APIs | Git | Github | Heroku </h4>
-          <h5 align="center"> Office | Trello | Figma | Scrum | Kanban </h5>
-        </div>
-      </section>
-      <section id="projects"> class="content-head"
-        <h1 align="right" id="heading-projetos"> Projetos </h1> 
-        <div class="projetos">
-          <ul>
-            <li><h3><a href="https://www.letsgo-social.com.br" target="_blank"> LetsGo </a></h3></li>
-              <p>Utilizando o framework Ruby on Rails, além de autenticações para usuários, APIs tais quais Mapbox (para o serviço de geolocalização), Cloudinary (para o upload de fotos), Websocket (para mensagens privadas entre usuários), além de nested comments (para viabilizar respostas aos posts principais de tal evento, respostas à tais respostas, e assim por diante), o “Lets Go” é um aplicativo web que se assemelha à uma rede social, possibilitando ao usuário anunciar eventos (públicos ou privados), confirmar presença, conversar com seus amigos, e comentar nos posts dos eventos divulgados. <a href="https://github.com/lucca1998byu/letsgo"> (Veja o código)</a> <p>
-            <li><h3><a href="https://rent-for-all.herokuapp.com"> Rent for All </a></h3></li>
-              <p>Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o  marketplace “Rent for All”, serviço que possibilita a busca e anúncio de itens que se deseja alugar. <a href="https://github.com/gessicahug/rent_for_all"> (Veja o código)</a> <p>
-            <li><h3><a href="#"> Watchlist </a></h3></li>
-              <p>Primeiro projeto produzido no bootcamp da Le Wagon. Permite o usuário adicionar filmes da API “The Movie Database” à listas de seu interesse e elaborar reviews sobre tais produções. <a href="https://www.letsgo-social.com.br"> (Veja o código)</a> <p>
-          </ul>
-        </div>
-      </section>  
-      <section>
-        <div class="contato"> class="content-head"
-          <h1 align="right" id="heading-contato"> Contato </h1> 
-          <h3 align="center"><a href = "mailto:icvieiramg@gmail.com"> Email </a> | <a href="https://www.linkedin.com/in/icaroleon" target="_blank">Linkedin</a> </h3>
-        </div> 
-      </section>  
-      -->
-    </div>           
+    </div>    
+    <script src ="files/js/script.js"></script>     
   </body>
 </html>

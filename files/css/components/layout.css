@@ -1,8 +1,9 @@
-.container{
+.container-fluid{
+  
   
 }
 
-.row {
+.layout-center {
   align-items: center;
   position: absolute;
   top: 50%;
@@ -10,7 +11,7 @@
   flex-wrap: nowrap!important;
   margin-left: 200px!important;
   margin-right: 300px!important;
-}
+} 
 
 .infos{
   border: 1px solid; 
@@ -18,11 +19,9 @@
   height: 650px;
   padding: 10px;
 }
-
-.content{
-  border: 1px solid;
-  border-radius: 25px; 
-  margin-left: 15px;
-  height: 550px;
-  padding: 10px;
+.tabBody{
+  text-align: justify;
+  width: 750px;
+  height: 350px;
+  background-color: red;
 }
