@@ -1,0 +1,19 @@
+.row > .col-3 {
+    display: flex;
+    flex: 0 0 48%;
+    max-width: 48%;;
+}
+
+.flex-nowrap {
+    -webkit-flex-wrap: nowrap!important;
+    -ms-flex-wrap: nowrap!important;
+    flex-wrap: nowrap!important;
+}
+.flex-row {
+    display:flex;
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+    -webkit-flex-direction: row!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
