@@ -1,7 +1,13 @@
-.row > .col-3 {
+.row > .projectsColumns {
     display: flex;
-    flex: 0 0 48%;
-    max-width: 48%;;
+    flex: 0 0 82%;
+    max-width: 82%;
+    margin-right: 55px;
+}
+
+.horizontal-scrollable { 
+  overflow-x: auto;
+  margin-left: 0px;
 }
 
 .flex-nowrap {
@@ -16,4 +22,13 @@
     -webkit-flex-direction: row!important;
     -ms-flex-direction: row!important;
     flex-direction: row!important;
+}
+
+.projects {
+  
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+ 
+
+
 }

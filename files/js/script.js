@@ -25,6 +25,16 @@ function openTab(evt, TabName) {
     evt.currentTarget.className += " col-6";
   }
   document.getElementById("defaultOpen").click()
+
+  
+
+  const scrollContainer = document.getElementsByClassName("horizontal-scrollable");
+
+    scrollContainer[0].addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+    console.log('scrollContainer')
+  });
   
 
   

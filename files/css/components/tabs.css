@@ -1,10 +1,6 @@
 .content .active {
     background-color: rgba(234, 234, 234, 0.749);
   }
-
-.tabcontent {
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-  }
   
   /* Go from zero to full opacity */
   @keyframes fadeEffect {
@@ -23,7 +19,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 15px 16px;
     transition: 0.3s;
     border-bottom: 1px solid black;
   }
@@ -40,9 +36,10 @@
   
   /* Style the tab content */
   .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
     display: none;
     border-top: none;
-    padding: 14px;
+    padding: 15px;
   }
 
   .tab{
