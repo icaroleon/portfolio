@@ -8,6 +8,8 @@
 .horizontal-scrollable { 
   overflow-x: auto;
   margin-left: 0px;
+  min-width: 50vw;
+  
 }
 
 .flex-nowrap {

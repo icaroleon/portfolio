@@ -13,7 +13,8 @@
 
 #info-content {
   top: 100px;
-  padding-left: 5%;
+  padding-left: 3%;
+  
   
 } 
 
@@ -35,4 +36,8 @@
 
 .content {
   margin: 0px !important;
+}
+
+a {
+  text-decoration: none !important;
 }

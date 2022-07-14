@@ -1,0 +1,23 @@
+.projects {
+  overflow-x: hidden; /*or overflow-x:scroll */
+  overflow-y: hidden;
+  display: flex !important;
+  font-size: 8px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.projects-titles{ 
+  margin-bottom: 40px;
+}
+
+article {
+  min-width: 55vw;
+  min-height: 80vh;
+  margin-right: 85px;
+  justify-content: center;
+  align-items: center;
+  font-size: 4ch;
+}
