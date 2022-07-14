@@ -1,6 +1,5 @@
-@import url("components/layout.css");
-@import url("components/infos.css");
-@import url("components/content.css");
+@import url("components/personal_infos.css");
 @import url("components/tabs.css");
-@import url("components/scroll.css");
-@import url("components/testeabas.css");
+@import url("components/projects_tab.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css");

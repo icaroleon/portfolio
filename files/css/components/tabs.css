@@ -1,5 +1,14 @@
-.content .active {
+.tabs .active {
     background-color: rgba(234, 234, 234, 0.749);
+  }
+  
+  #tabs-content{
+    padding-right: 0px;
+  }
+  .tabBody{
+    text-align: justify;
+    height: 350px;
+    margin: 0px !important;
   }
   
   /* Go from zero to full opacity */
@@ -8,9 +17,7 @@
     to {opacity: 1;}
   }
 
-  .tab {
-    overflow: hidden;    
-  }
+  
   
   /* Style the buttons that are used to open the tab content */
   .tablinks {
@@ -24,15 +31,7 @@
     border-bottom: 1px solid black;
   }
   
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
   
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
   
   /* Style the tab content */
   .tabcontent {
@@ -43,29 +42,20 @@
     padding-right: 0px;
   }
 
-  .tab{
-    align-items: flex-start;
-    margin-right: 50px;
+.aboutMeTab:hover {
+  background-color: #ff9800;
+  border-bottom: solid 1px #ff9800;
+  border-left: 3px solid #ff9800;
   }
 
-  .aboutMe {
-    padding-left: 0px !important;
-  }
-
-  .aboutMeTab:hover {
-    background-color: #ff9800;
-    border-bottom: solid 1px #ff9800;
-    border-left: 3px solid #ff9800;
-  }
-
-  #skillsTab:hover {
-    color: #eeeeee;
-    background-color: #212121;
-    border-bottom: solid 1px #212121;
+#skillsTab:hover {
+  color: #eeeeee;
+  background-color: #212121;
+  border-bottom: solid 1px #212121;
   }
 
   #projectsTab:hover {
-    background-color: #ff6f61;
-    border-bottom: solid 1px #ff6f61;
-    border-left: 3px solid #ff6f61;
+  background-color: #ff6f61;
+  border-bottom: solid 1px #ff6f61;
+  border-left: 3px solid #ff6f61;
   }
