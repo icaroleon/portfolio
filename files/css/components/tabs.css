@@ -1,61 +1,62 @@
 .tabs .active {
-    background-color: rgba(234, 234, 234, 0.749);
-  }
-  
-  #tabs-content{
-    padding-right: 0px;
-  }
-  .tabBody{
-    text-align: justify;
-    height: 350px;
-    margin: 0px !important;
-  }
-  
-  /* Go from zero to full opacity */
-  @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+  background-color: rgba(234, 234, 234, 0.749);
+}
 
-  
-  
+#tabs-content{
+  padding-right: 0px;
+}
+.tabBody{
+  text-align: justify;
+  height: 350px;
+  margin: 0px !important;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
   /* Style the buttons that are used to open the tab content */
-  .tablinks {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px 16px;
-    transition: 0.3s;
-    border-bottom: 1px solid black;
-  }
-  
-  
-  
+.tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 16px;
+  transition: 0.3s;
+  border-bottom: 1px solid black;
+}
   /* Style the tab content */
-  .tabcontent {
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-    display: none;
-    border-top: none;
-    padding: 15px;
-    padding-right: 0px;
-  }
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  display: none;
+  border-top: none;
+  padding: 15px;
+  padding-right: 0px;
+}
 
 .aboutMeTab:hover {
-  background-color: #ff9800;
-  border-bottom: solid 1px #ff9800;
-  border-left: 3px solid #ff9800;
-  }
-
-#skillsTab:hover {
   color: #eeeeee;
   background-color: #212121;
   border-bottom: solid 1px #212121;
-  }
+}
 
-  #projectsTab:hover {
+#skillsTab:hover {
+  background-color: #ff9800;
+  border-bottom: solid 1px #ff9800;
+  border-left: 1px solid #ff9800;
+}
+
+#projectsTab:hover {
   background-color: #ff6f61;
   border-bottom: solid 1px #ff6f61;
-  border-left: 3px solid #ff6f61;
-  }
+  border-left: 1px solid #ff6f61;
+}
+
+#contactTab:hover {
+  background-color: #10411189;
+  border-bottom: solid 1px #10411189;
+  border-left: 1px solid #10411189;
+}
