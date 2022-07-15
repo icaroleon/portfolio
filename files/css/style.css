@@ -3,3 +3,19 @@
 @import url("components/projects_tab.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css");
+@import url("components/contact_tab.css");
+
+#infoContent {
+    top: 100px;
+    padding-left: 3%;
+  } 
+
+#mainContent {
+  padding-right: 0px;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

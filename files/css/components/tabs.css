@@ -7,7 +7,7 @@
 }
 .tabBody{
   text-align: justify;
-  height: 350px;
+  height: 100%;
   margin: 0px !important;
 }
 
@@ -35,6 +35,7 @@
   border-top: none;
   padding: 15px;
   padding-right: 0px;
+  height: 100%;
 }
 
 .aboutMeTab:hover {
@@ -59,4 +60,9 @@
   background-color: #10411189;
   border-bottom: solid 1px #10411189;
   border-left: 1px solid #10411189;
+}
+
+#aboutMeContent{
+  padding-right: 15px;
+  padding-top: 80px;
 }

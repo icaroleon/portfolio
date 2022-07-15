@@ -5,6 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+  box-shadow: 2px 2px 10px black;
 }
 
 #name {
@@ -15,9 +16,11 @@
   font-size: 15px;    
 }
 
-#infoContent {
-  top: 100px;
-  padding-left: 3%;
-} 
+a {
+  color: #212529!important ;
 
+}
 
+a:hover{
+  text-decoration: underline!important;
+}

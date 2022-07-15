@@ -19,8 +19,9 @@
           <p><a href="https://www.linkedin.com/in/icaroleon/" target="_blank" ><i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/in/icaroleon/</p></a>
           <p><a href="mailto:icvieiramg@gmail.com?" target="_blank"><i class="fa-solid fa-square-envelope"></i> icvieiramg@gmail.com</p></a>
           <p><a href="https://github.com/icaroleon" target="_blank"><i class="fa-brands fa-github-square"></i> https://github.com/icaroleon</p></a>
+          <p align="center"><button type="button" class="btn btn-light"><a href="files/curriculum/Ícaro_Leon_CV.pdf" target?="_blank" download="Ícaro_Leon_CV"> Download my CV</a></button></p>
         </div>
-        <main class="col-9">
+        <main class="col-9" id="mainContent">
           <nav class="row tabs"> 
             <nav class = "col tablinks aboutMeTab" id="defaultOpen" onclick="openTab(event, 'aboutMeContent')">
               <h5 class="mb-0">01.</h5>
@@ -45,7 +46,6 @@
               <p> Após diversos projetos voluntários realizados e ter feito parte de escritórios tanto em Minas Gerais quanto no Rio de Janeiro, <strong> em 2022 </strong> dei voz à minha antiga paixão pela tecnologia e<strong> resolvi transacionar de carreira, concluindo  o bootcamp de desenvolvimento web da <em> Le Wagon</strong></em>, momento no qual tive contato com diversas linguagens, conceitos, funcionalidades, e desafios dessa nova área. </p>
               <p> Nesse momento, procuro uma oportunidade profissional tanto para colocar em prática tais ensinamentos, quanto para ter contato com o ambiente de criação de produtos digitais. </p>
               <p> Gostou da minha história? Entre em contato!</p>
-              <p></p><a href="files/curriculum/Ícaro_Leon_CV.pdf" target?="_blank" download="Ícaro_Leon_CV"> Download my CV </a></p>
             </section>
             <section class="tabcontent" id="skillsContent">
               <p>Ruby | Javascript | Ruby on Rails | React | HTML | CSS | Bootstrap | MySQL | PostgreSQL
@@ -149,9 +149,13 @@
                 </article>
             </section>
             <section class="tabcontent" id="contactContent">
-              <p>Ruby | Javascript | Ruby on Rails | React | HTML | CSS | Bootstrap | MySQL | PostgreSQL
-              <p> OOP | RESTful APIs | Git | Github | Heroku </p>
-              <p> Office | Trello | Figma | Scrum | Kanban </p>
+              <form action="https://formspree.io/f/mvoljepr" method="POST" target="_blank" id="contact-form">
+                <input type="text" name="Name" placeholder="Nome Completo" required>
+                <input type="email" name="Email" placeholder="Endereço de email" required>
+                <input type="text" name="Assunto" placeholder="Assunto" required>
+                <textarea name="Message" placeholder="Escreva sua mensagem..." required id="message-form"></textarea>
+                <button type="submit" class="action-button"> Enviar </button>
+              </form>
             </section>
           </div>     
         </main>
