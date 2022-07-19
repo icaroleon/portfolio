@@ -7,7 +7,6 @@
 }
 .tabBody{
   text-align: justify;
-  height: 100%;
   margin: 0px !important;
 }
 
@@ -62,7 +61,11 @@
   border-left: 1px solid #10411189;
 }
 
-#aboutMeContent{
+#aboutMeContent {
   padding-right: 15px;
   padding-top: 80px;
+}
+
+#skillsContent {
+  padding-right: 15px;
 }

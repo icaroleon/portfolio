@@ -6,8 +6,8 @@
 }
 
 .projects > article {
-  min-width: 55vw;
-  margin-right: 85px;
+  min-width: 49vw;
+  margin-right: 3%;
   justify-content: center;
   align-items: center;
 }
