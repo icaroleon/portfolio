@@ -30,4 +30,4 @@ const scrollContainer = document.querySelector("div.projects");
   scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
-});
+}); 
