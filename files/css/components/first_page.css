@@ -1,0 +1,23 @@
+.second-page {
+  display: none;
+}
+
+.first-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+}
+
+.profile-pic{
+  margin-right: 75px;
+
+}
+
+.hello {
+    display: inline-block
+}
+
+.show-portfolium{
+
+}

@@ -26,10 +26,34 @@ function openTab(evt, TabName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(TabName).style.display = "block";
-  evt.currentTarget.className += " active";
-  evt.currentTarget.className += " col-6";
+  if (document.getElementById(TabName) == document.getElementById('contactContent')){
+    
+    infoContentTab = document.querySelector('div#infoContent')
+    mainContentTab= document.querySelector('main#mainContent')
+    
+    document.getElementById(TabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " col-6";
+    infoContentTab.style.display = "block"
+    mainContentTab.className = mainContentTab.className.replace("col-xl-12 col-lg-12 col-md-12 col-sm-12", "col-xl-9 col-lg-8 col-md-7 col-sm-12")
+    }
+  else {
+    mainContentTab= document.querySelector('main#mainContent')
+      if (mainContentTab.className == ("col-xl-9 col-lg-8 col-md-7 col-sm-12")){
+        infoContentTab.style.display = "none"
+        mainContentTab.className = mainContentTab.className.replace("col-xl-9 col-lg-8 col-md-7 col-sm-12", "col-xl-12 col-lg-12 col-md-12 col-sm-12")
+    }
+    mainContentTab= document.querySelector('main#mainContent')
+    
+    document.getElementById(TabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " col-6";
+    
+  }
 }
+  
+  
+
 
 //scroll projects with the mouse wheel
 const scrollContainerProjects = document.querySelector("div.projects");
@@ -65,3 +89,11 @@ function hideDownloadText(evt, TextName) {
     }
 }
 
+function showPortfolium (){
+
+  firstPage = document.querySelector('div.first-page');
+  secondPage = document.querySelector('div.second-page');
+
+  firstPage.style.display = "none";
+  secondPage.style.display = "flex";
+}
