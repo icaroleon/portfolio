@@ -1,0 +1,25 @@
+#aboutMeContent > .aboutMe {
+  overflow-x: hidden; /*or overflow-x:scroll */
+  overflow-y: hidden;
+  font-size: 16px;
+}
+  
+#aboutMeContent > .aboutMe > article {
+  min-width: 49vw;
+  margin-right: 3%;
+  text-align: justify;
+}
+
+#aboutMeContent > .aboutMe > article > h2{
+  font-family: 'Oswald', sans-serif;
+  padding-left: 10px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+#aboutMeContent > .aboutMe > article {
+}
+
+#aboutMeContent > .aboutMe > article > p {
+  padding-left: 25px;
+}

@@ -1,8 +1,40 @@
 .projects {
   overflow-x: hidden; /*or overflow-x:scroll */
   overflow-y: hidden;
-  flex-wrap: wrap !important;
   font-size: 16px;
+}
+
+.projects > article > h3 {
+  text-align: left;
+}
+
+.projects > article > h3 > .badge {
+  font-size: 50%;
+  font-weight: 600;
+  vertical-align: middle;
+  
+}
+.projects > article > h3 > span > a {
+  text-decoration: none;
+  
+}
+
+.projects > article > h3 > #LetsGoBadge {
+  background-color: rgba(234, 234, 234, 0.8);
+}
+
+.projects > article > h3 > #RentForAllBadge {
+  background-color: rgba(234, 234, 234, 0.8);
+}
+
+.projects > article > h3 > #LetsGoBadge:hover {
+  color: #eeeeee;
+  background-color: black;
+}
+
+.projects > article > h3 > #RentForAllBadge:hover {
+  color: black;
+  background-color: #ff9800;
 }
 
 .projects > article {
@@ -12,9 +44,15 @@
   align-items: center;
 }
 
-.project-title{ 
-  margin-bottom: 3%;
+.previous {
+  font-size: 70px;
+  color: black;
+  left: -4% !important;
 }
 
-#projectsContent{
+.next {
+  font-size: 70px;
+  color: black;
+  right: -4% !important;
 }
+
