@@ -68,8 +68,8 @@ const scrollContainerAboutMe = document.querySelector("div.aboutMe");
     scrollContainerAboutMe.scrollLeft += evt.deltaY;
 }); 
 
-//hide cv icon and show text download as soon the mouse enter the button
-document.getElementsByClassName('cv-text-button')[1].style.display = 'none'
+/*hide cv icon and show text download as soon the mouse enter the button
+//document.getElementsByClassName('cv-text-button')[1].style.display = 'none'
 function showDownloadText(evt, TextName) {
   document.getElementsByClassName('cv-text-button')[1].style.display="inline-block"
   
@@ -88,7 +88,7 @@ function hideDownloadText(evt, TextName) {
       buttonCV[1].style.display = "none";
     }
 }
-
+*/
 function showPortfolium (){
 
   firstPage = document.querySelector('div.first-page');
@@ -97,3 +97,4 @@ function showPortfolium (){
   firstPage.style.display = "none";
   secondPage.style.display = "flex";
 }
+

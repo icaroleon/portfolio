@@ -5,28 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='files/css/style.css' rel='stylesheet'>
     <meta charset="utf-8">
-    <title > Ícaro Leon - Portfolium</title>
+    <title > Ícaro Leon - Full Stack Web Developer</title>
     <meta name="description" content="Sou um desenvolvedor full-stack buscando uma oportunidade profissional no ambiente de criação de produtos digitais, após transacionar da advocacia criminal.">
   </head>
   <body>
     <div class="container-fluid">
-      <div class="first-page">
-        <div class="profile-pic">
-          <img src="https://avatars.githubusercontent.com/u/100085859?v=4" id="profile-pic">
+      <div class="first-page row">  
+        <div class="row description-content">
+          <div class="profile-pic">
+            <img src="https://avatars.githubusercontent.com/u/100085859?v=4" id="profile-pic-description">
+          </div>
+          <div class="description">
+            <div class="description-title ">
+              <h1 class= "" id="first-page-title">ÍCARO LEON</h1>
+              <p id="subtitle">Full-Stack Web Developer</p>
+            </div>
+            <div class="description-skills">
+              <p class="description-skills">Ruby on Rails | React </p>
+              <p class="description-skills"> Ruby | Javascript | HTML | CSS</p>
+              <p class="description-skills">  Bootstrap | MySQL | PostgreSQL</p>
+              <p class="description-skills"> Git | Github | RESTful APIs | Heroku</p>
+              <p class="description-skills"> Office | Trello | Figma | Scrum | Kanban  </p>
+            </div>
+            <!--<p id="description-first-line">Ruby on Rails | React | Javascript | Ruby | HTML | CSS | </p>
+              <p id="description-second-line"> Bootstrap | OOP | RESTful APIs | Git | Github | Heroku</p>
+              <p id="description-third-line"> Office | Trello | Figma | Scrum | Kanban </p>-->
+          </div>
         </div>
-        <div class="hello">
-          <p>teste</p>
-          <p><a class="btn btn-light show-portfolium" id="show-portfolium" onclick="showPortfolium()" >teste</a></p>
-        </div>    
+        <div class="button col-12">
+          <p><a class="btn btn-light show-portfolium col-xl-12 col-lg-12 col-md-12 col-sm-12" id="show-portfolium" onclick="showPortfolium()" >Saiba mais</a></p>
+        </div>
       </div>
 
       <div class="row second-page">
         <div class="col-xl-3 col-lg-4 col-md-5 col-sm-12 centered mainContent" id="infoContent">
           <div id="image-and-cv">
             <img src="https://avatars.githubusercontent.com/u/100085859?v=4" id="profile-pic">
-            <a class="btn btn-light cv-button" href="files/curriculum/Ícaro_Leon_CV.pdf" role="button" target?="_blank" download="Ícaro_Leon_CV"  id="cv-button" onmousemove="showDownloadText(event, 'cv-text-button')" onmouseleave="hideDownloadText(event, 'cv-text-button')">
-            <img src="files/images/cv2.png" alt="cv-icon" class="cv-text-button" id="cv-icon"> 
-            <p class="cv-text-button" id="cv-text">Download CV</p>
+            <a class="btn btn-light cv-button" href="files/curriculum/Ícaro_Leon_CV.pdf" role="button" target?="_blank" download="Ícaro_Leon_CV"  id="cv-button"> <!-- onmousemove="showDownloadText(event, 'cv-text-button')" onmouseleave="hideDownloadText(event, 'cv-text-button')">-->
+              <img src="files/images/cv2.png" alt="cv-icon" class="cv-text-button" id="cv-icon"> 
+              <p class="cv-text-button" id="cv-text">Download CV</p>
             </a>
           </div>
           <h1 id="name"> Ícaro Leon</h1>
@@ -59,22 +76,20 @@
             <section class="tabcontent" id="aboutMeContent">
               <div class="aboutMe row flex-md-nowrap">
                 <article class="col mb-3">
-                  <h2> SOBRE MIM  </h2>
-                  <br>
+                  <h2 class="title"> SOBRE MIM  </h2>
                   <p>Formado em Direito e nascido em Minas Gerais, atuei como advogado criminalista desde a minha formação, em 2019.</p>
                   <p>Após diversos projetos voluntários realizados e ter feito parte de escritórios tanto em Minas Gerais quanto no Rio de Janeiro, em 2022 dei voz à minha antiga paixão pela tecnologia e resolvi transacionar de carreira, concluindo o bootcamp de desenvolvimento web da Le Wagon, momento no qual tive contato com diversas linguagens, conceitos, funcionalidades e desafios dessa nova área.</p>
                   <p> Nesse momento, procuro uma oportunidade profissional tanto para colocar em prática tais ensinamentos, quanto para ter contato com o ambiente de criação de produtos digitais.</p>
                 </article>
                 <article class="col mb-3">
-                  <h2>WHY ME?</h2>
+                  <h2 class="title">WHY ME?</h2>
                   <p>Formado em Direito e nascido em Minas Gerais, atuei como advogado criminalista desde a minha formação, em 2019.</p>
                   <p>Após diversos projetos voluntários realizados e ter feito parte de escritórios tanto em Minas Gerais quanto no Rio de Janeiro, em 2022 dei voz à minha antiga paixão pela tecnologia e resolvi transacionar de carreira, concluindo o bootcamp de desenvolvimento web da Le Wagon, momento no qual tive contato com diversas linguagens, conceitos, funcionalidades, e desafios dessa nova área.</p>
                   <p> Nesse momento, procuro uma oportunidade profissional tanto para colocar em prática tais ensinamentos, quanto para ter contato com o ambiente de criação de produtos digitais.</p>
-                  <br>
                   <p> Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o marketplace “Rent for All”, serviço que possibilita a busca e anúncio de itens que se deseja alugar. <a href="https://github.com/gessicahug/rent_for_all" target="_blank"> (Veja o código)</a> </p>
                 </article>
                 <article class="col mb-3">
-                  <h3 class="project-title">Watchlist</h3>
+                  <h2 class="title">Watchlist</h2>
                   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
