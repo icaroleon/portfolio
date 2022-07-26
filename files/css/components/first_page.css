@@ -3,7 +3,7 @@
 }
 
 .first-page{
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   height: 750px;
@@ -35,11 +35,11 @@
   padding: 0px
 }
 
-.first-page > .description-content > .description >  .description-skills {
+.first-page > .description >  .description-skills {
  margin-top: 28px;
 }
 
-.first-page > .description-content > .description >  .description-skills > p{
+.first-page > .description >  .description-skills > p{
   font-family: 'Oswald';
   text-align: right;
   margin-bottom: 0px;

@@ -51,9 +51,6 @@ function openTab(evt, TabName) {
     
   }
 }
-  
-  
-
 
 //scroll projects with the mouse wheel
 const scrollContainerProjects = document.querySelector("div.projects");
