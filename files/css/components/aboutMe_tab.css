@@ -5,25 +5,46 @@
 }
   
 #aboutMeContent > .aboutMe > article {
-  min-width: 49vw;
   margin-right: 3%;
   text-align: justify;
 }
 
-#aboutMeContent > .aboutMe > article > h2{
+#aboutMeContent > .aboutMeWrapper > .aboutMe > article > h2{
   font-family: 'Oswald', sans-serif;
   padding-left: 10px;
   padding-top: 50px;
   margin-bottom: 50px;
 }
 
-#aboutMeContent > .aboutMe > article {
+#aboutMeContent > .aboutMeWrapper > .aboutMe > article {
 }
 
-#aboutMeContent > .aboutMe > article > p {
+#aboutMeContent > .aboutMeWrapper > .aboutMe > article > p {
   padding-left: 30px;
 }
 
 .title {
   font-size: 45px
+}
+
+.bodylinks {
+ 
+}
+
+.aboutMeWrapper{
+  display: flex;
+  align-items: center;
+}
+
+.aboutMe{
+  padding-right: 75px;
+  height: 500px;
+}
+
+.bodylinks {
+  font-family: 'Oswald';
+  font-size: 30px;
+  
+  text-align: center; 
+  padding: 0px !important;
 }

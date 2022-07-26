@@ -1,4 +1,5 @@
 document.getElementById("defaultOpen").click()
+document.querySelector("nav#bodyDefaultOpen").click()
 
 function openTab(evt, TabName) {
   // Declare all variables
@@ -35,14 +36,14 @@ function openTab(evt, TabName) {
     evt.currentTarget.className += " active";
     evt.currentTarget.className += " col-6";
     infoContentTab.style.display = "block"
-    mainContentTab.className = mainContentTab.className.replace("col-xl-12 col-lg-12 col-md-12 col-sm-12", "col-xl-9 col-lg-8 col-md-7 col-sm-12")
+    // mainContentTab.className = mainContentTab.className.replace("col-xl-12 col-lg-12 col-md-12 col-sm-12", "col-xl-9 col-lg-8 col-md-7 col-sm-12")
     }
   else {
     mainContentTab= document.querySelector('main#mainContent')
-      if (mainContentTab.className == ("col-xl-9 col-lg-8 col-md-7 col-sm-12")){
+      /* if (mainContentTab.className == ("col-xl-9 col-lg-8 col-md-7 col-sm-12")){
         infoContentTab.style.display = "none"
         mainContentTab.className = mainContentTab.className.replace("col-xl-9 col-lg-8 col-md-7 col-sm-12", "col-xl-12 col-lg-12 col-md-12 col-sm-12")
-    }
+    } */
     mainContentTab= document.querySelector('main#mainContent')
     
     document.getElementById(TabName).style.display = "block";
@@ -51,6 +52,36 @@ function openTab(evt, TabName) {
     
   }
 }
+
+function showContent(evt, TabName) {
+  // Declare all variables
+  var i, bodycontent;
+  // Get all elements with class="tabcontent" and hide them
+
+  bodycontent = document.getElementsByClassName("body-content");
+  for (i = 0; i < bodycontent.length; i++) {
+    bodycontent[i].style.display = "none";
+    //infocontent.style.display = "none";
+
+  }
+ var i, bodycontent, tablinks;
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  bodylinks = document.getElementsByClassName("bodylinks");
+  for (i = 0; i < bodylinks.length; i++) {
+    bodylinks[i].className = bodylinks[i].className.replace("active", "");
+  }
+
+  for (i = 0; i < bodylinks.length; i++) {
+    bodylinks[i].className = bodylinks[i].className.replace("", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(TabName).style.display = "contents";
+  /* evt.currentTarget.className += " active";
+  evt.currentTarget.className += " "; */
+  }
+
 
 //scroll projects with the mouse wheel
 const scrollContainerProjects = document.querySelector("div.projects");
