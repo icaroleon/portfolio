@@ -58,13 +58,14 @@ h2 {
   text-align: center; 
   padding: 0px !important;
   color: rgba(69, 68, 68, 0.205);
-  
-
+  cursor: pointer;
 }
+
+
 
 .bodylinks:hover {
   
-  
+  color: rgba(69, 68, 68, 0.5);
   
 }
 

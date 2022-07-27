@@ -1,19 +1,54 @@
-#skills {
-  padding: 10%;
-        
+.skills {
+  text-align: initial;
 }
 
-#linha1{
-  font-size: 26px;
-  font-weight: 600;
+.skillsLinks{
+  font-family: 'Oswald';
+  font-size: 30px;
+  margin-left: 0px;
+  text-align: center; 
+  padding: 0px !important;
+  color: rgba(69, 68, 68, 0.205);
+  cursor: pointer;
 }
 
-#linha2{
-  font-size: 23px;
+.skillsLinks:hover{
+  color:black
+}
+
+.skillLinkSelected {
+  color:black
+}
+
+
+
+h3{
+  
+
+
+}
+
+#languages{}
+#frameworks{}
+#front{}
+#databases{}
+#knowledges{}
+#OS{}
+#cloud{}
+#version{}
+#tools{}
+#methodologies{}
+
+.selected{
+  font-size: 45px;
   font-weight: 500;
+  line-height: 1.2;
+  font-family: 'Oswald', sans-serif;
 }
 
-#linha3{
-  font-size: 20px;
-  font-weight: 400;
+.skillSelected:hover{
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: 'Oswald', sans-serif;
 }
