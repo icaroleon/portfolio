@@ -1,6 +1,9 @@
 document.getElementById("defaultOpen").click()
 document.querySelector("nav#bodyDefaultOpen").click()
 
+
+// document.querySelector("nav#bodyDefaultOpenProjects").click()
+
 function openTab(evt, TabName) {
   // Declare all variables
   var i, tabcontent;
@@ -40,50 +43,59 @@ function openTab(evt, TabName) {
     }
   else {
     mainContentTab= document.querySelector('main#mainContent')
-      /* if (mainContentTab.className == ("col-xl-9 col-lg-8 col-md-7 col-sm-12")){
-        infoContentTab.style.display = "none"
-        mainContentTab.className = mainContentTab.className.replace("col-xl-9 col-lg-8 col-md-7 col-sm-12", "col-xl-12 col-lg-12 col-md-12 col-sm-12")
-    } */
-    mainContentTab= document.querySelector('main#mainContent')
-    
+      if (document.getElementById(TabName) == document.getElementById('projectsContent')){
+        document.querySelector("nav#bodyDefaultOpenProjects").click()
+      } else if (document.getElementById(TabName) == document.getElementById('aboutMeContent')){
+     document.querySelector("nav#bodyDefaultOpen").click()
+        console.log("ok")
+        mainContentTab= document.querySelector('main#mainContent')
+      }
     document.getElementById(TabName).style.display = "block";
     evt.currentTarget.className += " active";
     evt.currentTarget.className += " col-6";
     
   }
-}
+
+    }
+    
+
+    
 
 function showContent(evt, TabName) {
   // Declare all variables
   var i, bodycontent;
   // Get all elements with class="tabcontent" and hide them
-
+  bodylinks = document.getElementsByClassName("bodylinks");
   bodycontent = document.getElementsByClassName("body-content");
   for (i = 0; i < bodycontent.length; i++) {
     bodycontent[i].style.display = "none";
+    
+    bodylinks[i].className = bodylinks[i].className.replace("active", "");
+    bodylinks[i].className = bodylinks[i].className.replace("", "");
     //infocontent.style.display = "none";
-
   }
- var i, bodycontent, tablinks;
+
+  document.getElementById(TabName).style.display = "contents";
+   evt.currentTarget.className += " active";
+ /* var i, bodycontent, tablinks;
 
   // Get all elements with class="tablinks" and remove the class "active"
-  bodylinks = document.getElementsByClassName("bodylinks");
+  
   for (i = 0; i < bodylinks.length; i++) {
-    bodylinks[i].className = bodylinks[i].className.replace("active", "");
+    bodylinks[i].className = bodylinks[i].className.replace("active", "disabled");
   }
 
   for (i = 0; i < bodylinks.length; i++) {
-    bodylinks[i].className = bodylinks[i].className.replace("", "");
-  }
+    bodylinks[i].className = bodylinks[i].className.replace("disabled", "");
+  } */
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(TabName).style.display = "contents";
-  /* evt.currentTarget.className += " active";
-  evt.currentTarget.className += " "; */
+  
+  /*evt.currentTarget.className += " "; */
   }
 
 
-//scroll projects with the mouse wheel
+/*scroll projects with the mouse wheel
 const scrollContainerProjects = document.querySelector("div.projects");
 scrollContainerProjects.addEventListener("wheel", (evt) => {
     evt.preventDefault();
@@ -94,7 +106,7 @@ const scrollContainerAboutMe = document.querySelector("div.aboutMe");
   scrollContainerAboutMe.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainerAboutMe.scrollLeft += evt.deltaY;
-}); 
+}); */ 
 
 /*hide cv icon and show text download as soon the mouse enter the button
 //document.getElementsByClassName('cv-text-button')[1].style.display = 'none'
@@ -125,4 +137,6 @@ function showPortfolium (){
   firstPage.style.display = "none";
   secondPage.style.display = "flex";
 }
+
+
 

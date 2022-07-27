@@ -51,5 +51,18 @@
 }
 
 #message-form {
-  height: 275px;
+  height: 250px;
+}
+
+#contactContent h2 {
+  margin-bottom: 45px;
+}
+
+#infoContent {
+  padding-top: 3%;
+  padding-right: 0px;
+} 
+
+.contactForm{
+  
 }

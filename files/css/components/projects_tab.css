@@ -4,8 +4,9 @@
   font-size: 16px;
 }
 
-.projects > article > h3 {
+.projects > article > h2 {
   text-align: left;
+  font-family: 'Oswald', sans-serif !important;
 }
 
 .projects > article > h3 > .badge {
@@ -18,6 +19,12 @@
   text-decoration: none;
   
 }
+
+#projectsContent > .aboutMeWrapper > .aboutMe > article > h2 {
+  margin-bottom: 45px;
+}
+
+
 
 .projects > article > h3 > #LetsGoBadge {
   background-color: rgba(234, 234, 234, 0.8);
@@ -56,4 +63,18 @@
   color: black;
   right: -4% !important;
 }
+
+#projectsContent h2 {
+  animation: fadeEffect 3s;
+}
+
+#projectsContent h6 {
+  animation: fadeEffect .5s;
+  padding-left: 1px;
+}
+
+#projectsContent p {
+  animation: fadeEffect 1s;
+}
+
 

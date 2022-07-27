@@ -9,11 +9,6 @@
 #tabs-content{
   padding-right: 0px;
 }
-.tabBody{
-  text-align: justify;
-  margin: auto;
-  padding-top: 15px;
-}
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
@@ -28,7 +23,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 15px 16px;
+  padding: 10px;
   transition: 0.3s;
   border-bottom: 1px solid black;
 }
