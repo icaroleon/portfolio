@@ -6,8 +6,13 @@
 @import url("components/contact_tab.css");
 @import url("components/skills_tab.css");
 @import url("components/aboutMe_tab.css");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Six+Caps&display=swap");
 @import url("components/first_page.css");
+@import url("components/devices.css");
+
+
+
+
 
 html, body {
   overflow-y: auto; 
@@ -17,15 +22,9 @@ html, body {
   font-family: 'Pt Sans';
 }
 
-
-
-#mainContent {
-}
-
 .tabBody{
   text-align: justify;
   margin: auto;
   padding-top: 40px;
   font-family: 'Pt Sans';
 }
-

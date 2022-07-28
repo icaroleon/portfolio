@@ -98,7 +98,7 @@ function showPortfolium (){
 }
 
 const skillLinks = document.querySelectorAll("nav.skillsLinks")
-const skills = document.querySelectorAll("h3.skillSelected")
+const skills = document.querySelectorAll("p.skillSelected")
 
 skillLinks.forEach((skillLink) => {
   //console.log(skillLink.innerText)
@@ -119,24 +119,24 @@ skillLinks.forEach((skillLink) => {
       case "Banco de dados":
         skills[3].classList.toggle("selected");
       break;
-      case "Conhecimentos específicos":
+      case "Cloud/Infra":
         skills[4].classList.toggle("selected");
       break;
-      case "Sistemas operacionais":
+      case "Versionamento":
         skills[5].classList.toggle("selected");
       break;
-      case "Cloud/Infra":
+      case "Conhecimentos específicos":
         skills[6].classList.toggle("selected");
       break;
-      case "Versionamento":
+      case "Sistemas operacionais":
         skills[7].classList.toggle("selected");
       break;
-      case "Outras ferramentas":
+      case "Metodologias":
         skills[8].classList.toggle("selected");
       break;
-      case "Metodologias":
+      case "Outras ferramentas":
         skills[9].classList.toggle("selected");
-      break;    
+      break;  
     }
 
     skillLink.addEventListener("mouseout", (event) =>{

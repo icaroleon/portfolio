@@ -4,12 +4,18 @@
 
 .skillsLinks{
   font-family: 'Oswald';
-  font-size: 30px;
+  font-size: 29px;
   margin-left: 0px;
   text-align: center; 
   padding: 0px !important;
   color: rgba(69, 68, 68, 0.205);
   cursor: pointer;
+}
+
+
+.skillsLinks a{
+  text-decoration: none;
+  color: rgba(69, 68, 68, 0.205);
 }
 
 .skillsLinks:hover{
@@ -40,15 +46,22 @@ h3{
 #methodologies{}
 
 .selected{
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 700 !important;
+}
+
+.skillSelected{
   font-family: 'Oswald', sans-serif;
+  font-size: 29px;
+  margin-left: 0px;
+  text-align: initial; 
+  padding: 0px !important;
+  cursor: pointer;
+  font-weight: 400;
+  color: black;
+  margin: 0px;
 }
 
 .skillSelected:hover{
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 700;
   font-family: 'Oswald', sans-serif;
 }
