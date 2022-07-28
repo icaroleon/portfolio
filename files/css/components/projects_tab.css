@@ -77,4 +77,8 @@
   animation: fadeEffect 1s;
 }
 
+.project-text{
+  padding-right: 0px !important;
+}
+
 

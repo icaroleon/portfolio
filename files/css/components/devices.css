@@ -1,14 +1,27 @@
  /* Mobile :320px. */
  @media screen and (max-width: 576px) {
-    .skillSelected{
+    
+  .skillSelected{
       font-size: 16px;
     }
  
     .skillsLinks{
       font-size: 16px;
       text-align: left; 
-      margin-left: 10px;
+      margin-left: 20px;
     }
+
+    .title {
+      display:none
+    }
+
+    .spaceDevice {
+      margin-bottom: 35px
+    }
+    .project-text {
+      padding-right: 10px !important;
+    }
+
   }
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .skillSelected{
@@ -20,6 +33,33 @@
       text-align: left; 
       margin-left: 20px;
     }
+
+    .title {
+      display:none
+    }
+
+    .spaceDevice {
+      margin-bottom: 35px
+    }
+    .project-text {
+      padding-right: 10px;
+    }
   }
+
+@media screen and (min-width: 767px) and (max-width: 991px) { 
+
+  .title {
+    display:none
+  }
+
+  .spaceDevice {
+    margin-bottom: 35px
+  }
+ }
+
       
-      
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .project-text {
+    display: inline-table;
+  }
+}

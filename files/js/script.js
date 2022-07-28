@@ -167,22 +167,22 @@ skills.forEach((skill) => {
       case "MySQL | PostgreSQL":
         skillLinks[3].classList.toggle("skillLinkSelected");
       break;
-      case "OOP | RESTful APIs":
+      case "Heroku" :
         skillLinks[4].classList.toggle("skillLinkSelected");
       break;
-      case "Windows | Linux | MacOS":
+      case "Git | Github":
         skillLinks[5].classList.toggle("skillLinkSelected");
       break;
-      case "Heroku":
+      case "OOP | RESTful APIs": 
         skillLinks[6].classList.toggle("skillLinkSelected");
       break;
-      case "Git | Github":
+      case "Windows | Linux | MacOS":
         skillLinks[7].classList.toggle("skillLinkSelected");
       break;
-      case "Microsoft Office | Trello | Figma":
+      case "Scrum | Kanban" :
         skillLinks[8].classList.toggle("skillLinkSelected");
       break;
-      case "Scrum | Kanban":
+      case "Microsoft Office | Trello | Figma":
         skillLinks[9].classList.toggle("skillLinkSelected");
       break;    
     }    

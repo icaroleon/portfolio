@@ -18,12 +18,12 @@
   color: rgba(69, 68, 68, 0.205);
 }
 
-.skillsLinks:hover{
-  color:black
+.skillsLinks a:hover{
+  color: black
 }
 
-.skillLinkSelected {
-  color:black
+.skillLinkSelected a {
+  color:black 
 }
 
 

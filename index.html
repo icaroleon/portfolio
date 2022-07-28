@@ -51,14 +51,14 @@
           <div class="tabBody"> 
             <section class="tabcontent" id="aboutMeContent">
               <div class="aboutMeWrapper row">
-                <nav class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row">
+                <nav class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row spaceDevice">
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-12 col" id="bodyDefaultOpen" onclick="showContent(event, 'sobreMim')">Sobre Mim</nav>
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-12 col" onclick="showContent(event, 'whyMe')"> Why Me? </nav>
-                  <nav class="bodylinks col-lg-12 col-xl-12 col-md-12 col" onclick="showContent(event, 'teste')"> Watchlist </nav>
+                  <nav class="bodylinks col-lg-12 col-xl-12 col-md-12 col" onclick="showContent(event, '')"> Watchlist </nav>
                 </nav>
                 <div class="aboutMe col-xl-7 col">
                   <article class="body-content col mb-3" id="sobreMim">
-                    <h2 class="title "> Sobre Mim  </h2>
+                    <h2 class="title"> Sobre Mim  </h2>
                     <p>Formado em Direito e nascido em Minas Gerais, atuei como advogado criminalista desde a minha formação, em 2019.</p>
                     <p>Após diversos projetos voluntários realizados e ter feito parte de escritórios tanto em Minas Gerais quanto no Rio de Janeiro, em 2022 dei voz à minha antiga paixão pela tecnologia e resolvi transacionar de carreira, concluindo o bootcamp de desenvolvimento web da Le Wagon, momento no qual tive contato com diversas linguagens, conceitos, funcionalidades e desafios dessa nova área.</p>
                     <p> Nesse momento, procuro uma oportunidade profissional tanto para colocar em prática tais ensinamentos, quanto para ter contato com o ambiente de criação de produtos digitais.</p>
@@ -70,8 +70,8 @@
                     <p> Nesse momento, procuro uma oportunidade profissional tanto para colocar em prática tais ensinamentos, quanto para ter contato com o ambiente de criação de produtos digitais.</p>
                     <p> Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o marketplace “Rent for All”, serviço que possibilita a busca e anúncio de itens que se deseja alugar. <a href="https://github.com/gessicahug/rent_for_all" target="_blank"> (Veja o código)</a> </p>
                   </article>
-                  <article class="body-content col mb-3" id="teste">
-                    <h2 class="title teste">Watchlist</h2>
+                  <article class="body-content col mb-3" id="">
+                    <h2 class="title">Watchlist</h2>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -110,7 +110,7 @@
                   <nav class="skillsLinks col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"><a href="#tools">Outras ferramentas</a></nav>
                 </nav>
                 <div class="skills col-xxl-8 col-xl-8 col-lg-7 col-md-6 col-sm-6 col">
-                  <p class="skillSelected teste" id="languages" >Ruby | Javascript</h3>
+                  <p class="skillSelected" id="languages" >Ruby | Javascript</h3>
                   <p class="skillSelected" id="frameworks">Ruby on Rails | React</p>
                   <p class="skillSelected" id="front">HTML | CSS | Bootstrap</p>
                   <p class="skillSelected" id="databases">MySQL | PostgreSQL</p>
@@ -125,16 +125,16 @@
             </section>
             <section class="tabcontent" id="projectsContent">
               <div class="aboutMeWrapper row">
-                <nav class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row">
-                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-12 col" id="bodyDefaultOpenProjects" onclick="showContent(event, 'letsGo')" >Let's Go</nav>
-                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-12 col" onclick="showContent(event, 'rentForAll')"> Rent For All </nav>
-                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-12 col" onclick="showContent(event, 'watchlist')"> Watchlist </nav>
+                <nav class="col-xl-4 col-lg-4 col-md-12 col-sm-12 row spaceDevice">
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-4 col" id="bodyDefaultOpenProjects" onclick="showContent(event, 'letsGo')" >Let's Go</nav>
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-4 col" onclick="showContent(event, 'rentForAll')"> Rent For All </nav>
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-4 col" onclick="showContent(event, 'watchlist')"> Watchlist </nav>
                 </nav>
                 <div class="aboutMe col-xl-7 col">
                   <article class="body-content col mb-3" id="letsGo">
-                      <h2>Let's Go<a href="https://www.letsgo-social.com.br/" target="_blank" class="badge badge-pill badge-light" id="LetsGoBadge">https://www.letsgo-social.com.br/</a></h2>
+                      <h2 class="title">Let's Go<a href="https://www.letsgo-social.com.br/" target="_blank" class="badge badge-pill badge-light" id="LetsGoBadge">https://www.letsgo-social.com.br/</a></h2>
                       <div class="row">
-                        <div class="col-4">
+                        <div class="project-text col-xl-4 col-lg-4 col-md-12 col-sm-12">
                           <h6><strong>Tecnologias empregadas:</strong></h6>
                           <p>Ruby on Rails, Javascript, HTML/CSS, Bootstrap, PostgreSQL, Git, diversas APIs.</p>
                           <h6><strong>Principais desafios:</strong></h6>
@@ -142,7 +142,7 @@
                           <h6><strong>Veja o código:</strong></h6>
                           <p><a href="https://github.com/lucca1998byu/letsgo" target="_blank">https://github.com/lucca1998byu/letsgo</a> </p>
                         </div>
-                        <div class="carousel slide col-8" id="carouselExampleIndicators"  data-bs-ride="carousel">
+                        <div class="carousel slide col" id="carouselExampleIndicators"  data-bs-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item active">
                               <img src="files/images/RentForAll/1.JPG" class="d-block w-100" alt="...">
@@ -162,9 +162,9 @@
 
                   </article>
                   <article class="body-content whyMe col mb-3" id="rentForAll">
-                    <h2>Rent for All </h2>
+                    <h2 class="title">Rent for All </h2>
                     <div class="row">
-                      <div class="col-4">
+                      <div class="project-text col-xl-4 col-lg-4 col-md-12 col-sm-12">
                         <h6><strong>Tecnologias empregadas:</strong></h6>
                           <p>Ruby on Rails, Javascript, HTML/CSS, Bootstrap, PostgreSQL, Git, Cloudinary. </p>
                         <br>
@@ -173,7 +173,7 @@
                         <h6><strong>Veja o código:</strong></h6>
                           <p><a href="https://github.com/gessicahug/rent_for_all" target="_blank"> https://github.com/gessicahug/rent_for_all</a> </p>
                       </div>
-                      <div class="carousel slide col-8" id="carouselExampleIndicators"  data-bs-ride="carousel">
+                      <div class="carousel slide col" id="carouselExampleIndicators"  data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="files/images/RentForAll/1.JPG" class="d-block w-100" alt="...">
@@ -191,7 +191,7 @@
                   <h6><strong>Descrição:</strong></h6><p> Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o marketplace “Rent for All”, serviço que possibilita a busca e anúncio de itens que se deseja alugar.</p>
                   </article>
                   <article class="body-content col mb-3" id="watchlist">
-                    <h2 class="project-title">Watchlist</h2>
+                    <h2 class="title">Watchlist</h2>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
