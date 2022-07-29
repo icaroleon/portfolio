@@ -51,11 +51,11 @@
 }
 
 #message-form {
-  height: 250px;
+  height: 215px;
 }
 
-#contactContent h2 {
-  margin-bottom: 45px;
+#contact-title{
+  margin-bottom: 45px 
 }
 
 #infoContent {
@@ -65,4 +65,12 @@
 
 .contactForm{
   
+}
+
+#image-and-cv{
+	margin-left: 22px
+}
+
+#image-and-cv a{
+  color: black;
 }

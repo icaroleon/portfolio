@@ -126,21 +126,59 @@
             <section class="tabcontent" id="projectsContent">
               <div class="aboutMeWrapper row">
                 <nav class="col-xl-4 col-lg-4 col-md-12 col-sm-12 row spaceDevice">
-                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-4 col" id="bodyDefaultOpenProjects" onclick="showContent(event, 'letsGo')" >Let's Go</nav>
-                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-4 col" onclick="showContent(event, 'rentForAll')"> Rent For All </nav>
-                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-4 col" onclick="showContent(event, 'watchlist')"> Watchlist </nav>
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-4" id="bodyDefaultOpenProjects" onclick="showContent(event, 'portfolium')" >Portfólio</nav>
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-4" id="bodyDefaultOpenProjects" onclick="showContent(event, 'letsGo')" >Let's Go</nav>
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-4" onclick="showContent(event, 'rentForAll')"> Rent For All </nav>
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-12" id="last-project" onclick="showContent(event, 'watchlist')"> Watchlist </nav>
                 </nav>
                 <div class="aboutMe col-xl-7 col">
+                  <article class="body-content col mb-3" id="portfolium">
+                    <h2 class="title">Portfólio<a href="https://www.letsgo-social.com.br/" target="_blank" class="badge badge-pill badge-light link-projeto" id="LetsGoBadge">icaroleon.com</a></h2>
+                    <div class="row">
+                      <div class="project-text col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <h6><strong>Tecnologias empregadas:</strong></h6>
+                        <p>Javascript, HTML/CSS, Bootstrap, Figma, Git.</p>
+                        <h6><strong>Principais desafios:</strong></h6>
+                        <ul>
+                          <li>Primeiro projeto após o bootcamp sem supervisão dos professores;</li>
+                          <li>Possibilidades infinitas. Manejo do tempo;</li>
+                          <li>Responsividade;</li>
+                        </ul>
+                        <h6><strong>Veja o código:</strong></h6>
+                        <p><a href="https://github.com/icaroleon/icaroleon.github.io" target="_blank">github.com/icaroleon/icaroleon.github.io</a> </p>
+                      </div>
+                      <div class="carousel slide col" id="carouselExampleIndicators"  data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="files/images/RentForAll/1.JPG" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/RentForAll/2.JPG" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/RentForAll/3.JPG" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h6><strong>Descrição:</strong></h6>
+                    <p>Sabendo da importância para futuras oportunidades profissionais, o portfólio foi idealizado no Figma desde o ínicio. Com intuito de criar uma marca pessoal, se assemelhando ao design do <a href="files/curriculum/Ícaro_Leon_CV.pdf" target?="_blank" download="Ícaro_Leon_CV"> currículo</a>, o primeiro projeto pessoal após Bootcamp da <i>Le Wagon</i>, além de contar com responsividade dos menores para os maiores dispositivos, também envolve funcionalidades construídas através do Javascript de forma a deixar o site mais dinâmico. As abas para navegação, a criação de uma página inicial com um pequeno resumo, além de outras funções, foram aplicadas objetivando a familiarização com a linguagem, tão importante no dia-a-dia de um desenvolvedor Full-Stack.</p>
+
+                </article>
                   <article class="body-content col mb-3" id="letsGo">
-                      <h2 class="title">Let's Go<a href="https://www.letsgo-social.com.br/" target="_blank" class="badge badge-pill badge-light" id="LetsGoBadge">https://www.letsgo-social.com.br/</a></h2>
+                      <h2 class="title">Let's Go<a href="https://www.letsgo-social.com.br/" target="_blank" class="badge badge-pill badge-light link-projeto" id="LetsGoBadge">letsgo-social.com.br</a></h2>
                       <div class="row">
                         <div class="project-text col-xl-4 col-lg-4 col-md-12 col-sm-12">
                           <h6><strong>Tecnologias empregadas:</strong></h6>
                           <p>Ruby on Rails, Javascript, HTML/CSS, Bootstrap, PostgreSQL, Git, diversas APIs.</p>
                           <h6><strong>Principais desafios:</strong></h6>
-                          <p>XXXXXXXXXXXXX</p>
+                          <ul>
+                            <li>Idealização integral do projeto;</li>
+                            <li>Integração de diversas API's;</li>
+                            <li>Manejo do tempo;</li>
+                          </ul>
                           <h6><strong>Veja o código:</strong></h6>
-                          <p><a href="https://github.com/lucca1998byu/letsgo" target="_blank">https://github.com/lucca1998byu/letsgo</a> </p>
+                          <p><a href="https://github.com/lucca1998byu/letsgo" target="_blank">github.com/lucca1998byu/letsgo</a> </p>
                         </div>
                         <div class="carousel slide col" id="carouselExampleIndicators"  data-bs-ride="carousel">
                           <div class="carousel-inner">
@@ -158,20 +196,23 @@
                       </div>
                       <br>
                       <h6><strong>Descrição:</strong></h6>
-                      <p>Utilizando o framework Ruby on Rails, além de autenticações para usuários, APIs tais quais Mapbox (para o serviço de geolocalização), Cloudinary (para o upload de fotos), Websocket (para mensagens privadas entre usuários), além de nested comments (para viabilizar respostas aos posts principais de tal evento, respostas à tais respostas, e assim por diante), o “Let's Go” é um aplicativo web que se assemelha à uma rede social, possibilitando ao usuário anunciar eventos (públicos ou privados), confirmar presença, conversar com seus amigos, e comentar nos posts dos eventos divulgados.  </p>
+                      <p>Utilizando o framework Ruby on Rails, além de autenticações para usuários, APIs tais quais Mapbox (para o serviço de geolocalização), Cloudinary (para o upload de fotos), Websocket (para mensagens privadas entre usuários), além de nested comments (para viabilizar respostas aos posts principais de tal evento, respostas à tais respostas, e assim por diante), o <i>Let's Go</i> é um aplicativo web que se assemelha à uma rede social, possibilitando ao usuário anunciar eventos (públicos ou privados), confirmar presença, conversar com seus amigos, e comentar nos posts dos eventos divulgados.  </p>
 
                   </article>
                   <article class="body-content whyMe col mb-3" id="rentForAll">
-                    <h2 class="title">Rent for All </h2>
+                    <h2 class="title">Rent for All <a href="https://rent-for-all.herokuapp.com/" target="_blank" class="badge badge-pill badge-light link-projeto" id="RentForAllBadge">rent-for-all.herokuapp.com</a></h2>
                     <div class="row">
                       <div class="project-text col-xl-4 col-lg-4 col-md-12 col-sm-12">
                         <h6><strong>Tecnologias empregadas:</strong></h6>
                           <p>Ruby on Rails, Javascript, HTML/CSS, Bootstrap, PostgreSQL, Git, Cloudinary. </p>
-                        <br>
                         <h6><strong>Principais desafios:</strong></h6>
-                          <p>XXXXXXXXXXXXX</p>
+                          <ul>
+                            <li>Primeiro versionamento em grupo;</li>
+                            <li>Primeiro projeto livre do bootcamp. O grupo foi responsável, no espaço de uma semana, desde a concepção inicial, limitação do escopo, até a sua concretização;</li>
+                            <li>Implementação de API's;</li>
+                          </ul>
                         <h6><strong>Veja o código:</strong></h6>
-                          <p><a href="https://github.com/gessicahug/rent_for_all" target="_blank"> https://github.com/gessicahug/rent_for_all</a> </p>
+                          <p><a href="https://github.com/gessicahug/rent_for_all" target="_blank"> github.com/gessicahug/rent_for_all</a> </p>
                       </div>
                       <div class="carousel slide col" id="carouselExampleIndicators"  data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -187,52 +228,66 @@
                         </div>
                       </div>
                     </div>
-                  <br>
-                  <h6><strong>Descrição:</strong></h6><p> Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o marketplace “Rent for All”, serviço que possibilita a busca e anúncio de itens que se deseja alugar.</p>
+                  <h6><strong>Descrição:</strong></h6>
+                  <p> Com enfoque no framework Ruby on Rails, pensando na necessidade de se alugar itens de maneira pontual, elaboramos o marketplace <i>Rent For All</i>, serviço que possibilita a busca, anúncio e aluguel de artigos. Para tanto, utilizamos a API Cloudinary para o armazenamento de fotos dos itens anunciados, além da Gem de autorização <i>Pundit</i>, que possibilitou políticas de acesso diferentes para cada usuário. </p>
                   </article>
-                  <article class="body-content col mb-3" id="watchlist">
-                    <h2 class="title">Watchlist</h2>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="files/images/rent_for_all.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="files/images/lets_go.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
+                  <article class="body-content whyMe col mb-3" id="watchlist">
+                    <h2 class="title">Watchlist <a href="https://rent-for-all.herokuapp.com/" target="_blank" class="badge badge-pill badge-light link-projeto" id="RentForAllBadge">rent-for-all.herokuapp.com</a></h2>
+                    <div class="row">
+                      <div class="project-text col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <h6><strong>Tecnologias empregadas:</strong></h6>
+                          <p>Ruby on Rails, Javascript, HTML/CSS, Bootstrap, PostgreSQL, Git, Cloudinary. </p>
+                        <h6><strong>Principais desafios:</strong></h6>
+                          <ul>
+                            <li>Primeira aplicação web em Ruby On Rails;</li>
+                            <li>Todo o projeto, tanto o Backend quanto Frontend, foi realizado em 2 dias;</li>
+                          </ul>
+                        <h6><strong>Veja o código:</strong></h6>
+                          <p><a href="https://github.com/lewagon/rails-watch-list/" target="_blank"> github.com/icaroleon/rails-watch-list</a></p>
+                      </div>
+                      <div class="carousel slide col" id="carouselExampleIndicators"  data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="files/images/RentForAll/1.JPG" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/RentForAll/2.JPG" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/RentForAll/3.JPG" class="d-block w-100" alt="...">
+                          </div>
                         </div>
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
                     </div>
-                    <br>
-                    <p>Primeiro projeto produzido no bootcamp da Le Wagon. Permite o usuário adicionar filmes da API “The Movie Database” à listas de seu interesse e elaborar reviews sobre tais produções. (Veja o código) </p>                  </article>
+                  <h6><strong>Descrição:</strong></h6>
+                  <p> Primeiro projeto produzido no bootcamp da Le Wagon. Permite o usuário adicionar filmes da API “The Movie Database” à listas de seu interesse e elaborar reviews sobre tais produções. Projeto essencial para se familizar com CRUD. </p> </p>
+                  </article>
                 </div>
               </div>
             </section>
             <section class="tabcontent" id="contactContent">
               <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row centered mainContent" id="infoContent">
-                  <div id="image-and-cv">
-                    <img src="https://avatars.githubusercontent.com/u/100085859?v=4" id="profile-pic">
-                    <a class="btn btn-light cv-button" href="files/curriculum/Ícaro_Leon_CV.pdf" role="button" target?="_blank" download="Ícaro_Leon_CV"  id="cv-button"> <!-- onmousemove="showDownloadText(event, 'cv-text-button')" onmouseleave="hideDownloadText(event, 'cv-text-button')">-->
-                      <img src="files/images/cv2.png" alt="cv-icon" class="cv-text-button" id="cv-icon"> 
-                      <p class="cv-text-button" id="cv-text">Download CV</p>
-                    </a>
+                  <div class="row" id="image-and-cv">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12">
+                      <img src="https://avatars.githubusercontent.com/u/100085859?v=4" id="profile-pic">
+                      <a class="btn btn-light cv-button" href="files/curriculum/Ícaro_Leon_CV.pdf" role="button" target?="_blank" download="Ícaro_Leon_CV"  id="cv-button"> <!-- onmousemove="showDownloadText(event, 'cv-text-button')" onmouseleave="hideDownloadText(event, 'cv-text-button')">-->
+                        <img src="files/images/cv2.png" alt="cv-icon" class="cv-text-button" id="cv-icon"> 
+                        <p class="cv-text-button" id="cv-text">Download CV</p>
+                      </a>
+                    </div>
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12">
+                      <h1 id="name"><strong>Ícaro Leon</strong></h1>
+                      <h3 id="ocupation">Full-Stack Web Developer | Ruby on Rails</h3>
+                      <p><i class="fa-solid fa-location-crosshairs"></i> Nova Lima/MG, Brasil</p>
+                      <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/icaroleon/" target="_blank" >https://www.linkedin.com/in/icaroleon/</p></a>
+                      <p><i class="fa-solid fa-square-envelope"></i> <a href="mailto:icvieiramg@gmail.com?" target="_blank">icvieiramg@gmail.com</p></a>
+                      <p><i class="fa-brands fa-github-square"></i> <a href="https://github.com/icaroleon" target="_blank">https://github.com/icaroleon</p></a>
+                    </div>
                   </div>
-                  <h1 id="name"> Ícaro Leon</h1>
-                  <h3 id="ocupation">Full-Stack Web Developer | Ruby on Rails</h3>
-                  <p><i class="fa-solid fa-location-crosshairs"></i> Nova Lima/MG, Brasil</p>
-                  <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/icaroleon/" target="_blank" >https://www.linkedin.com/in/icaroleon/</p></a>
-                  <p><i class="fa-solid fa-square-envelope"></i> <a href="mailto:icvieiramg@gmail.com?" target="_blank">icvieiramg@gmail.com</p></a>
-                  <p><i class="fa-brands fa-github-square"></i> <a href="https://github.com/icaroleon" target="_blank">https://github.com/icaroleon</p></a>
                 </div>
                 <div class="contactForm col-xl-7 col">
-                  <h2>Envie sua mensagem:</h2>
+                  <h2 id="contact-title">Envie sua mensagem:</h2>
                   <form action="https://formspree.io/f/mvoljepr" method="POST" target="_blank" id="contact-form">
                     <input type="text" name="Name" placeholder="Nome Completo" required>
                     <input type="email" name="Email" placeholder="Endereço de email" required>

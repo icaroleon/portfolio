@@ -101,47 +101,54 @@ const skillLinks = document.querySelectorAll("nav.skillsLinks")
 const skills = document.querySelectorAll("p.skillSelected")
 
 skillLinks.forEach((skillLink) => {
-  //console.log(skillLink.innerText)
-  skillLink.addEventListener("mouseover", (event) =>{
-    for (i = 0; i < skills.length; i++) {
-      skills[i].className = skills[i].className.replace("selected", "");
-    }
+  skillLink.addEventListener("mouseover", (event) =>{   
     switch (skillLink.innerText){
       case "Linguagens":
         skills[0].classList.toggle("selected");
+        skillLinks[0].classList.toggle("skillLinkSelected");
       break;
       case "Frameworks":
         skills[1].classList.toggle("selected");
+        skillLinks[1].classList.toggle("skillLinkSelected");
       break;
       case "Frontend":
         skills[2].classList.toggle("selected");
+        skillLinks[2].classList.toggle("skillLinkSelected");
       break;
       case "Banco de dados":
         skills[3].classList.toggle("selected");
+        skillLinks[3].classList.toggle("skillLinkSelected");
       break;
       case "Cloud/Infra":
         skills[4].classList.toggle("selected");
+        skillLinks[4].classList.toggle("skillLinkSelected");
       break;
       case "Versionamento":
         skills[5].classList.toggle("selected");
+        skillLinks[5].classList.toggle("skillLinkSelected");
       break;
       case "Conhecimentos específicos":
         skills[6].classList.toggle("selected");
+        skillLinks[6].classList.toggle("skillLinkSelected");
       break;
       case "Sistemas operacionais":
         skills[7].classList.toggle("selected");
+        skillLinks[7].classList.toggle("skillLinkSelected");
       break;
       case "Metodologias":
         skills[8].classList.toggle("selected");
+        skillLinks[8].classList.toggle("skillLinkSelected");
       break;
       case "Outras ferramentas":
         skills[9].classList.toggle("selected");
+        skillLinks[9].classList.toggle("skillLinkSelected");
       break;  
     }
 
     skillLink.addEventListener("mouseout", (event) =>{
       for (i = 0; i < skills.length; i++) {
         skills[i].className = skills[i].className.replace("selected", "");
+        skillLinks[i].className = skillLinks[i].className.replace("skillLinkSelected", "");
       }
     })
   })
@@ -150,46 +157,54 @@ skillLinks.forEach((skillLink) => {
 skills.forEach((skill) => {
   //console.log(skillLinks.innerText)
   skill.addEventListener("mouseover", (event) =>{
-    for (i = 0; i < skillLinks.length; i++) {
-      skillLinks[i].className = skillLinks[i].className.replace("skillLinkSelected", "");
-    }
     switch (skill.innerText){
       case "Ruby | Javascript":
         console.log("ok")
         skillLinks[0].classList.toggle("skillLinkSelected");
+        skills[0].classList.toggle("selected")
       break;
       case "Ruby on Rails | React":
         skillLinks[1].classList.toggle("skillLinkSelected");
+        skills[1].classList.toggle("selected")
       break;
       case "HTML | CSS | Bootstrap":
         skillLinks[2].classList.toggle("skillLinkSelected");
+        skills[2].classList.toggle("selected")
       break;
       case "MySQL | PostgreSQL":
         skillLinks[3].classList.toggle("skillLinkSelected");
+        skills[3].classList.toggle("selected")
       break;
       case "Heroku" :
         skillLinks[4].classList.toggle("skillLinkSelected");
+        skills[4].classList.toggle("selected")
       break;
       case "Git | Github":
         skillLinks[5].classList.toggle("skillLinkSelected");
+        skills[5].classList.toggle("selected")
       break;
       case "OOP | RESTful APIs": 
         skillLinks[6].classList.toggle("skillLinkSelected");
+        skills[6].classList.toggle("selected")
       break;
       case "Windows | Linux | MacOS":
         skillLinks[7].classList.toggle("skillLinkSelected");
+        skills[7].classList.toggle("selected")
       break;
       case "Scrum | Kanban" :
         skillLinks[8].classList.toggle("skillLinkSelected");
+        skills[8].classList.toggle("selected")
       break;
       case "Microsoft Office | Trello | Figma":
         skillLinks[9].classList.toggle("skillLinkSelected");
+        skills[9].classList.toggle("selected")
       break;    
     }    
 
     skill.addEventListener("mouseout", (event) =>{
       for (i = 0; i < skillLinks.length; i++) {
         skillLinks[i].className = skillLinks[i].className.replace("skillLinkSelected", "");
+        skills[i].className = skills[i].className.replace("selected", "");
       }
     })        
   })

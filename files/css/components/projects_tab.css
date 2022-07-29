@@ -79,6 +79,15 @@
 
 .project-text{
   padding-right: 0px !important;
+  display: inline-table;
+}
+
+.project-text ul{
+  padding-left: 30px;
+}
+
+.link-projeto{
+  font-size: 15px !important
 }
 
 
