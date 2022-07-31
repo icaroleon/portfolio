@@ -22,8 +22,17 @@
       padding-right: 10px !important;
     }
 
-    #last-project { 
+    .first-column-project { 
       margin-top: 15px;
+    }
+
+    .description{
+      padding: 10px
+    }
+
+    #profile-pic-description{
+      width: 190px
+      
     }
 
   }
@@ -53,7 +62,7 @@
   #contact-title{
     margin-bottom: 0px;
   }
-  #last-project { 
+  .first-column-project { 
     margin-top: 25px;
   }
 
