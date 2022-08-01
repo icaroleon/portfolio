@@ -1,6 +1,10 @@
  /* Mobile :320px. */
  @media screen and (max-width: 576px) {
     
+  .aboutMe{
+    padding: 20px
+  }
+
   .skillSelected{
       font-size: 15px;
     }
@@ -53,7 +57,10 @@
       }
     }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .aboutMe{
+    padding: 20px
+  }
   .skillSelected{
     font-size: 20px;
   }
@@ -74,6 +81,7 @@
   .spaceDevice {
     margin: 0px;
   }
+
   .project-text {
     padding-right: 10px;
   }
@@ -93,6 +101,10 @@
 
 @media screen and (min-width: 767px) and (max-width: 991px) { 
 
+  .aboutMe{
+    padding: 20px
+  }
+  
   .title {
     display:none
   }
@@ -104,6 +116,7 @@
   .spaceDevice {
     margin: 0px;
  }
+}
 
       
 @media screen and (min-width: 991px) and (max-width: 1200px) {
