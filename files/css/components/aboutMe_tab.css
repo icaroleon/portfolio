@@ -40,7 +40,6 @@ h2 {
 .aboutMe{
   height: 500px;
   padding: 0px;
-  margin: 10px;
   animation: fadeEffect 3s;
 }
 
