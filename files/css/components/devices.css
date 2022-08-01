@@ -1,6 +1,10 @@
  /* Mobile :320px. */
  @media screen and (max-width: 576px) {
     
+  .selected {
+    font-size: 14px !important;
+  }
+
   .aboutMe{
     padding: 20px
   }
