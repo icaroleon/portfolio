@@ -89,5 +89,7 @@
 .link-projeto{
   font-size: 15px !important
 }
-
+.project-column {
+  flex-direction: row-reverse;
+}
 
