@@ -33,10 +33,22 @@
     #profile-pic-description{
       width: 180px;  
       margin-left: 9px;
-      
     }
 
-  }
+    #contact-title{
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
+
+    #contact-infos{
+      padding-left: 0px;
+    }
+
+    #image-and-cv{
+      margin-left: 15px;
+      }
+    }
+
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .skillSelected{
     font-size: 20px;
