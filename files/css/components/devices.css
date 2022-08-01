@@ -31,7 +31,8 @@
     }
 
     #profile-pic-description{
-      width: 190px
+      width: 180px;  
+      margin-left: 10px;
       
     }
 
