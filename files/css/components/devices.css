@@ -15,6 +15,10 @@
       display:none
     }
 
+    .link-small-devices{
+      display: block;
+    }
+
     .spaceDevice {
       margin-bottom: 35px
     }
@@ -62,6 +66,11 @@
   .title {
     display:none
   }
+
+  .link-small-devices{
+    display: block;
+  }
+
   .spaceDevice {
     margin-bottom: 35px
   }
@@ -86,6 +95,10 @@
 
   .title {
     display:none
+  }
+
+  .link-small-devices{
+    display: block;
   }
 
   .spaceDevice {
