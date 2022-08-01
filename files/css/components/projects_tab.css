@@ -75,6 +75,8 @@
 
 #projectsContent p {
   animation: fadeEffect 1s;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .project-text{
