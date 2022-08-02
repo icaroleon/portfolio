@@ -29,4 +29,16 @@ html, body {
   font-family: 'Pt Sans';
 }
 
+.container-fluid{
+  height: 100%
+}
+
+.first-page{
+  height: 100%
+}
+
+.second-page{
+  height: 100%
+}
+
 
