@@ -65,16 +65,16 @@
 }
 
 #projectsContent h2 {
-  animation: fadeEffect 3s;
+  animation: fadeEffect 1s;
 }
 
 #projectsContent h6 {
-  animation: fadeEffect .5s;
+  animation: fadeEffect 2s;
   padding-left: 1px;
 }
 
 #projectsContent p {
-  animation: fadeEffect 1s;
+  animation: fadeEffect 3s;
   padding-bottom: 10px;
   padding-left: 10px;
 }

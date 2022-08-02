@@ -11,15 +11,17 @@
 }
 
 #aboutMeContent > .aboutMeWrapper > .aboutMe > article > h2{
-  font-family: 'Oswald', sans-serif;
-  margin-bottom: 45px;
-  margin-left: -3px;
+  animation: fadeEffect 2s; 
+}
+
+#aboutMeContent > .aboutMeWrapper > .aboutMe > article > p{
   animation: fadeEffect 2s; 
 }
 
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 44px;
+  margin-bottom: 45px;
 }
 
 .title {
@@ -34,7 +36,6 @@ h2 {
 .aboutMe{
   height: 500px;
   padding: 0px;
-  animation: fadeEffect 3s;
 }
 
 .aboutMe > article{
@@ -65,6 +66,6 @@ h2 {
 .aboutMeWrapper > .row > .active {
  
   color: black;
-  animation: fadeEffect 2s;
+  
 }
 
