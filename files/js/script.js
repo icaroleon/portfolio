@@ -93,7 +93,7 @@ function showPortfolium (){
   firstPage = document.querySelector('div.first-page');
   secondPage = document.querySelector('div.second-page');
   
-  
+  firstPage.style.display = "none";
   secondPage.style.display = "flex";
 }
 
