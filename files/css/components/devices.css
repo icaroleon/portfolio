@@ -40,7 +40,7 @@
 
     #profile-pic-description{
       width: 180px;  
-      margin-left: 9px;
+      
     }
 
     #contact-title{
@@ -58,10 +58,12 @@
 
       .description{
         max-width: 75%;
+        padding: 0px
       }
     
       .profile-pic{
-        max-width: 18%
+        max-width: 18%;
+        padding: 0px
       }
     }
 
