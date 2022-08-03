@@ -58,7 +58,8 @@
 
       .description{
         max-width: 75%;
-        padding: 0px
+        padding: 0px;
+        margin-left: 10px;
       }
     
       .profile-pic{
