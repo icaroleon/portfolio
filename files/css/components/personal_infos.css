@@ -3,7 +3,7 @@
 }
 
 #profile-pic{
-  width: 260px;
+  width: 220px;
   border-radius: 50%;
   margin: 0px auto 15px;
   display: block;
@@ -34,16 +34,15 @@
 }
 
 .cv-button{
-  position: absolute;
-  top: 206px;
-  right: 33%;
-  padding: 1px;
-  background-color: rgba(234, 234, 234, 0.8) !important;
-  
+  background-color: #10411189 !important;
+  width: 100%;
+  color: white !important;
+  font-weight: bold;
 }
 
 .cv-button:hover{
-  background-color: rgb(234, 234, 234) !important;;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+  background-color: #1d821feb!important;
 }
 
 #cv-icon {
@@ -61,4 +60,5 @@
 
 #cv-text {
   display: inline-block;
+  margin-bottom: 0px;
 }

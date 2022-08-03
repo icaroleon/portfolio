@@ -41,13 +41,14 @@
 	font-weight: bold;
 	color: white;
 	border: 0 none;
-	border-radius: 1px;
+	border-radius: 5px;
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
 #contact-form .action-button:hover, #contact-form .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+	background-color: #1d821feb!important;
 }
 
 #message-form {
