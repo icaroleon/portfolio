@@ -159,3 +159,13 @@
     max-width: 18%
   }
 }
+
+@media screen and (min-width: 1201px) {
+.description{
+  max-width: 17%; 
+}
+
+.profile-pic{
+  max-width: 17%;
+}
+}
