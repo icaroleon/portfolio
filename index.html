@@ -16,25 +16,28 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="first-page row" ontouchend="showPortfolium()">  
-        <div class="profile-pic">
+      <div class="first-page row align-items-end" ontouchend="showPortfolium()" onclick="showPortfolium()">  
+        <div class="profile-pic col-lg-3 col-2">
           <img src="files/images/profile.webp" id="profile-pic-description">
         </div>
-        <div class="description">
+        <div class="description col-9 col-sm-6 col-md-4 col-lg-3 col-2 ">
           <div class="description-title">
             <h1 class= "" id="first-page-title">ÍCARO LEON</h1>
             <p id="subtitle">Full-Stack Web Developer</p>
           </div>
-          <div class="description-skills">
+          <div class="description-skills ">
             <p class="description-skills">Ruby on Rails | React </p>
             <p class="description-skills"> Ruby | Javascript | HTML | CSS</p>
             <p class="description-skills">  Bootstrap | MySQL | PostgreSQL</p>
             <p class="description-skills"> Git | Github | RESTful APIs | Heroku</p>
             <p class="description-skills"> Office | Trello | Figma | Scrum | Kanban  </p>
+           
           </div>
         </div>
+        
+        <div class="col-12 align-self-start" id="know-more"><br> <p class="description-skills"><strong>Clique para saber mais</strong></p></div>
       </div>
-      <div class="second-page row" id='testess'>
+      <div class="second-page row">
         <main class="col-xl-12 col-lg-12 col-md-12 col-sm-12" id="mainContent">
           <nav class="row tabs"> 
             <nav class = "col tablinks aboutMeTab" id="defaultOpen" onclick="openTab(event, 'aboutMeContent')">
