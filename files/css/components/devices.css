@@ -55,6 +55,14 @@
     #image-and-cv{
       margin-left: 15px;
       }
+
+      .description{
+        max-width: 75%;
+      }
+    
+      .profile-pic{
+        max-width: 18%
+      }
     }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
@@ -96,6 +104,14 @@
     margin-top: 25px;
   }
 
+  .description{
+    max-width: 50%;
+  }
+
+  .profile-pic{
+    max-width: 18%
+  }
+
 
   }
 
@@ -116,11 +132,27 @@
   .spaceDevice {
     margin: 0px;
  }
+
+ .description{
+  max-width: 36%;
+}
+
+.profile-pic{
+  max-width: 18%
+}
 }
 
       
 @media screen and (min-width: 991px) and (max-width: 1200px) {
   .project-text {
     display: inline-table;
+  }
+
+  .description{
+    max-width: 22%;
+  }
+
+  .profile-pic{
+    max-width: 18%
   }
 }

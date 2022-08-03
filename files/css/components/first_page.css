@@ -1,6 +1,6 @@
 
 .description{
-
+  max-width: 15%;
 }
 
 #first-page-title{
@@ -39,7 +39,7 @@
 
 .profile-pic{
   align-items: center;
-
+  max-width: 15%
 }
 
 #profile-pic-description{
@@ -60,5 +60,6 @@
 
 #know-more {
   text-align: center;
-  align-items: start
+  align-items: start;
+  font-family: 'Oswald';
 }
