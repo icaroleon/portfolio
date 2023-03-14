@@ -135,12 +135,57 @@
             <section class="tabcontent" id="projectsContent">
               <div class="aboutMeWrapper row">
                 <nav class="col-xl-4 col-lg-4 col-md-12 col-sm-12 row spaceDevice flex-grow-1">
+                  <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-6" id="bodyDefaultOpenProjects" onclick="showContent(event, 'desafioBackend')" >Desafio Backend</nav>
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-6" id="bodyDefaultOpenProjects" onclick="showContent(event, 'portfolium')" >Portfólio</nav>
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-6" id="bodyDefaultOpenProjects" onclick="showContent(event, 'letsGo')" >Let's Go</nav>
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-6 first-column-project" onclick="showContent(event, 'rentForAll')"> Rent For All </nav>
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-3 col-6 first-column-project" onclick="showContent(event, 'watchlist')"> Watchlist </nav>
                 </nav>
                 <div class="aboutMe col-xl-7 col">
+                  <article class="body-content col mb-3" id="desafioBackend">
+                    <h2 class="title">Desafio Backend</h2>
+                    <div class="row project-column">
+                      <div class="carousel slide col" id="carouselExampleIndicators"  data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="files/images/DesafioBackend/1.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/DesafioBackend/2.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item active">
+                            <img src="files/images/DesafioBackend/3.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/DesafioBackend/4.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/DesafioBackend/5.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/DesafioBackend/6.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="files/images/DesafioBackend/7.webp" class="d-block w-100" alt="...">
+                          </div>  
+                        </div>
+                      </div>
+                      <div class="project-text col-xl-5 col-lg-4 col-md-12 col-sm-12">
+                        <h6 class="link-small-devices"><strong>Disponível em:</strong></h6>
+                        <p class="link-small-devices"><a href="https://icaroleon.dev/" target="_blank" class="badge badge-pill badge-light link-projeto" id="LetsGoBadge">icaroleon.dev</a></p>
+                        <h6><strong>Tecnologias empregadas:</strong></h6>
+                        <p>Ruby on Rails; PostgreSQL; RSpec; Postman.</p>
+                        <h6><strong>Principais desafios:</strong></h6>
+                        <ul>
+                          <li>Primeira API em Ruby on Rails; </li>
+                          <li>Definir os testes que seriam utilizados para a verificação pelo RSpec;</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h6><strong>Descrição:</strong></h6>
+                    <p>Desafio realizado para uma oportunidade backend. O teste consistiu em criar uma API de serviço do catálogo de filmes com dois endpoints: um que faça a leitura de um arquivo CSV e crie os registros no banco de dados. E um segundo que liste todos os filmes cadastrados em formato JSON. Para tanto, deveria se utilizar Ruby on Rails, seguir o padrão de API Restful, além de que a response deveria seguir um padrão pré estabelecido ordenado pela data de lançamento do filme, bem como não deve possuir duplicidade de registros. <a href="https://github.com/icaroleon/desafio-backend-moviesapi" target="_blank">Veja o repósitório do código </a>para acessar as instruções de acesso à API.</p>
+
+                  </article>
                   <article class="body-content col mb-3" id="portfolium">
                     <h2 class="title">Portfólio<a href="https://icaroleon.dev/" target="_blank" class="badge badge-pill badge-light link-projeto" id="LetsGoBadge">icaroleon.dev</a></h2>
                     <div class="row project-column">
@@ -188,7 +233,7 @@
                     <h6><strong>Descrição:</strong></h6>
                     <p>Sabendo da importância para futuras oportunidades profissionais, o portfólio foi idealizado no <a href="https://www.figma.com/file/oFcPji135OTxtGRWmgIJyA/Untitled?node-id=0%3A1" target="_blank">Figma</a> desde o ínicio. Com intuito de criar uma marca pessoal, se assemelhando ao design do <a href="files/curriculum/Ícaro_Leon_CV.pdf" target?="_blank" download="Ícaro_Leon_CV"> currículo</a>, o primeiro projeto pessoal após Bootcamp da <i>Le Wagon</i>, além de contar com responsividade dos menores para os maiores dispositivos, também envolve funcionalidades construídas através do Javascript de forma a deixar o site mais dinâmico. As abas para navegação, a criação de uma página inicial com um pequeno resumo, além de outras funções, foram aplicadas objetivando a familiarização com a linguagem, tão importante no dia-a-dia de um desenvolvedor Full-Stack <a href="https://github.com/icaroleon/icaroleon.github.io" target="_blank">(Veja o código)</a>.</p>
 
-                </article>
+                  </article>
                   <article class="body-content col mb-3" id="letsGo">
                       <h2 class="title">Let's Go<a href="https://www.letsgo-social.com.br/" target="_blank" class="badge badge-pill badge-light link-projeto" id="LetsGoBadge">letsgo-social.com.br</a></h2>
                       <div class="row project-column">
