@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="first-page row align-items-end" ontouchend="showPortfolium()" onclick="showPortfolium()">  
+       <div class="first-page row align-items-end" ontouchend="showPortfolium()" onclick="showPortfolium()">  
         <div class="profile-pic col-lg-3 col-2">
           <img src="files/images/profile.webp" alt="Ícaro Leon" id="profile-pic-description">
         </div>
@@ -39,31 +39,31 @@
       <div class="second-page row">
         <main class="col-xl-12 col-lg-12 col-md-12 col-sm-12" id="mainContent">
           <nav class="row tabs"> 
-            <nav class = "col tablinks aboutMeTab" id="defaultOpen" onclick="openTab(event, 'aboutMeContent')">
-              <h5 class="mb-0">01.</h5>
-              <h1 class="mb-0"><strong>Sobre.</strong></h1>
-            </nav>
-            <nav class = "col tablinks" id="skillsTab" onclick="openTab(event, 'skillsContent')">
-              <h5 class="mb-0">02.</h5>
-              <h1 class="mb-0"><strong>Skills.</strong></h1>
-            </nav>
-            <nav class = "col tablinks" id="projectsTab" onclick="openTab(event, 'projectsContent')">
-              <h5 class="mb-0">03.</h5>
-              <h1 class="mb-0"><strong>Projetos.</strong></h1>
-            </nav>
-            <nav class = "col tablinks" id="contactTab" onclick="openTab(event, 'contactContent')">
-              <h5 class="mb-0">04.</h5>
-              <h1 class="mb-0"><strong>Contato.</strong></h1>
-            </nav>
+            <div class = "col tablinks aboutMeTab" id="defaultOpen" onclick="openTab(event, 'aboutMeContent')">
+              <h2 class="mb-0">01.</h2>
+              <h3 class="mb-0"><strong>Sobre</strong></h3>
+            </div>
+            <div class = "col tablinks" id="skillsTab" onclick="openTab(event, 'skillsContent')">
+              <h2 class="mb-0">02.</h2>
+              <h3 class="mb-0"><strong>Skills</strong></h3>
+            </div>
+            <div class = "col tablinks" id="projectsTab" onclick="openTab(event, 'projectsContent')">
+              <h2 class="mb-0">03.</h2>
+              <h3 class="mb-0"><strong>Projetos</strong></h3>
+            </div>
+            <div class = "col tablinks" id="contactTab" onclick="openTab(event, 'contactContent')">
+              <h2 class="mb-0">04.</h2>
+              <h3 class="mb-0"><strong>Contato</strong></h3>
+            </div>
           </nav>
           <div class="tabBody"> 
             <section class="tabcontent" id="aboutMeContent">
               <div class="aboutMeWrapper row">
-                <nav class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row spaceDevice flex-grow-1">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row spaceDevice flex-grow-1">
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-12 col-6" id="bodyDefaultOpen" onclick="showContent(event, 'sobreMim')">Sobre Mim</nav>
                   <nav class="bodylinks col-xl-12 col-lg-12 col-md-12 col-6" onclick="showContent(event, 'formacao')"> Formação </nav>
                   <nav class="bodylinks col-lg-12 col-xl-12 col-md-12 col-12 first-column-project" onclick="showContent(event, 'other-activies')"> Outras atividades </nav>
-                </nav>
+                </div>
                 <div class="aboutMe col-xl-7 col">
                   <article class="body-content col mb-3" id="sobreMim">
                     <h2 class="title"> Sobre Mim  </h2>
@@ -115,7 +115,7 @@
                   <nav class="skillsLinks col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"><a href="#tools">Outras ferramentas</a></nav>
                 </nav>
                 <div class="skills col-xxl-8 col-xl-8 col-lg-7 col-md-6 col-sm-6 col">
-                  <p class="skillSelected" id="languages" >Ruby | Javascript</h3>
+                  <p class="skillSelected" id="languages">Ruby | Javascript</p>
                   <p class="skillSelected" id="frameworks">Ruby on Rails | React</p>
                   <p class="skillSelected" id="front">HTML | CSS | Bootstrap</p>
                   <p class="skillSelected" id="databases">MySQL | PostgreSQL</p>
@@ -332,36 +332,37 @@
             </section>
             <section class="tabcontent" id="contactContent">
               <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row centered mainContent" id="infoContent">
+                <article class="col-xl-4 col-lg-4 col-md-5 col-sm-12 row centered mainContent" id="infoContent">
                   <div class="row" id="image-and-cv">
                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12">
-                      <img src="files/images/profile.webp" id="profile-pic">
+                      <img src="files/images/profile.webp" alt="Ícaro Leon Profile Picture" id="profile-pic">
                     </div>
                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12" id="contact-infos">
-                      <h1 id="name"><strong>Ícaro Leon</strong> </h1>
-                      <h3 id="ocupation">Full-Stack Web Developer | Ruby on Rails</h3>
+                      <h1 id="name">Ícaro Leon</h1>
+                      <h2 id="ocupation">Full-Stack Web Developer | Ruby on Rails</h2>
                       <p><i class="fa-solid fa-location-crosshairs"></i> Nova Lima/MG, Brasil</p>
-                      <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/icaroleon/" target="_blank" >https://www.linkedin.com/in/icaroleon/</p></a>
-                      <p><i class="fa-solid fa-square-envelope"></i> <a href="mailto:icvieiramg@gmail.com?" target="_blank">icvieiramg@gmail.com</p></a>
-                      <p><i class="fa-brands fa-github-square"></i> <a href="https://github.com/icaroleon" target="_blank">https://github.com/icaroleon</p></a>
-                      <a class="btn btn-light cv-button" href="files/curriculum/Ícaro_Leon_FS.pdf" role="button" target?="_blank" download="Ícaro_Leon_CV"  id="cv-button"> <!-- onmousemove="showDownloadText(event, 'cv-text-button')" onmouseleave="hideDownloadText(event, 'cv-text-button')">-->
-                        <p class="cv-text-button" id="cv-text"> Baixe o Currículo</p>
+                      <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/icaroleon/" target="_blank">https://www.linkedin.com/in/icaroleon/</a></p>
+                      <p><i class="fa-solid fa-square-envelope"></i> <a href="mailto:icvieiramg@gmail.com?" target="_blank">icvieiramg@gmail.com</a></p>
+                      <p><i class="fa-brands fa-github-square"></i> <a href="https://github.com/icaroleon" target="_blank">https://github.com/icaroleon</a></p>
+                      <a class="btn btn-light cv-button" href="files/curriculum/Ícaro_Leon_FS.pdf" role="button" download="Ícaro_Leon_CV" id="cv-button">
+                        <p class="cv-text-button" id="cv-text">Baixe o Currículo</p>
                       </a>
                     </div>
                   </div>
-                </div>
-                <div class="contactForm col-xl-7 col">
+                </article>
+                <section class="contactForm col-xl-7 col">
                   <h2 id="contact-title">Envie sua mensagem:</h2>
                   <form action="https://formspree.io/f/mvoljepr" method="POST" target="_blank" id="contact-form">
-                    <input type="text" name="Name" placeholder="Nome Completo" required>
-                    <input type="email" name="Email" placeholder="Endereço de email" required>
+                    <input type="text" name="Name" placeholder="Nome Completo" autocomplete="name" required>
+                    <input type="email" name="Email" placeholder="Endereço de email" autocomplete="email" required>
                     <input type="text" name="Assunto" placeholder="Assunto" required>
                     <textarea name="Message" placeholder="Escreva sua mensagem..." required id="message-form"></textarea>
-                    <button type="submit" class="action-button"> Enviar </button>
+                    <button type="submit" class="action-button">Enviar</button>
                   </form>
-                </div>
-              </div>  
-            </section>  
+                </section>
+              </div>
+            </section>
+            
           </div>
         </main>
       </div>
